@@ -1,6 +1,7 @@
 import { Icon } from "../icon";
 import { Base } from "../placeholder/placeholder.stories";
 import { colors, spacers, typography, zIndices } from "./tokens";
+S
 
 export const lightTheme = {
 	colors: {
@@ -256,8 +257,7 @@ export const lightTheme = {
 		
 
 	cornerRadius: {
-
-		componentInner: spacers.[4],
+        componentInner: spacers.[4],
 		componentBase: spacers[8],
 		sectionInner: spacers[12],
 		containerBase: spacers[16],
@@ -265,7 +265,7 @@ export const lightTheme = {
 		rounded: spacers[999],
 	},
 
-	zIndices: {
+	zIndex:  {
 		softMedium: zIndices.softMedium,
 		surfaceElevated: zIndices.surfaceElevated,
 		overlayContent: zIndices.overlayContent,
