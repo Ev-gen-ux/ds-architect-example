@@ -1,25 +1,56 @@
+import { Icon } from "../icon";
 import { colors } from "./tokens";
 
 export const lightTheme = {
 	colors: {
 		bg: {
-			calm: {
-				section: colors.white,
-				global: colors.grey[50],
-				disabled: colors.grey[100],
+			global: {
+				calm: colors.white,
+			},
+			body: {
+				calm: colors.white,
+			},
+			section: {
+				calm: colors.neutral[100],
+				calmest: colors.white,
+			},
+			subSection: {
+				calmest: colors.neutral[25],
+			},	
+			container: {
+				calmest: colors.neutral[25],
+			},
+			benefitCard: {
+				calme: colors.white,
+			},	
+			sideBar: {
+				calmest: colors.white,
+			},	
+			footer: {
+				calm: colors.blue[50],
+			},	
+		},
+
+		border: {
+			subSection: {
+				calm: colors.neutral[100],
 			},
 		},
 
 		text: {
-			calm: {
-				main: colors.grey[50],
+				base: colors.neutral[700],
+				secondary: colors.neutral[400],
 			},
-			loud: {
-				main: colors.grey[800],
-				secondary: colors.grey[500],
-				disabled: colors.grey[300],
+
+		Icon: {
+				base: {
+					calm: colors.neutral[50],
+				},
+				secondary: {
+					calm: colors.neutral[300],
+					loud: colors.neutral[400],
+				},
 			},
-		},
 	},
 
 	spacing: {},
@@ -41,22 +72,53 @@ export const darkTheme = {
 	...lightTheme,
 	colors: {
 		bg: {
-			calm: {
-				section: colors.black,
-				global: colors.grey[900],
-				disabled: colors.grey[600],
+			global: {
+				calm: colors.blue[900],
+			},
+			body: {
+				calm: colors.blue[800],
+			},
+			section: {
+				calm: colors.blue[900],
+				calmest: colors.blue[800],
+			},
+			subSection: {
+				calmest: colors.blue[800],
+			},	
+			container: {
+				calmest: colors.blue[900],
+			},
+			benefitCard: {
+				calme: colors.blue[800],
+			},	
+			sideBar: {
+				calmest: colors.blue[800],
+			},	
+			footer: {
+				calm: colors.blue[800],
+			},	
+		},
+
+		border: {
+			subSection: {
+				calm: colors.neutral[600],
 			},
 		},
 
 		text: {
-			calm: {
-				main: colors.grey[700],
+				base: colors.neutral[50],
+				secondary: colors.neutral[200],
 			},
-			loud: {
-				main: colors.grey[100],
-				secondary: colors.grey[300],
-				disabled: colors.grey[500],
+
+		Icon: {
+				base: {
+					calm: colors.neutral[50],
+				},
+				secondary: {
+					calm: colors.neutral[300],
+					loud: colors.neutral[300],
+				},
 			},
-		},
 	},
+
 };
