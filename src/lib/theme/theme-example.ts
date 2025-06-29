@@ -100,9 +100,37 @@ export const lightTheme = {
 
 	},
 
-	shadows: {},
+	shadows: {
 
-	typography: {},
+		softMedium: {
+			zIndex: zIndices.softMedium,
+		},
+
+		surfaceElevated: {
+			zIndex: zIndices.surfaceElevated,
+		},
+
+		overlayContent: {
+			zIndex: zIndices.overlayContent,
+		},
+
+		overlayTooltip: {
+			zIndex: zIndices.overlayTooltip,
+		},
+
+		ooverlaymodal: {
+			zIndex: zIndices.overlayModal,
+		},
+
+		overlayNotifications: {
+			zIndex: zIndices.overlayNotification,
+		},
+
+	},
+
+	typography: {
+
+	},
 
 	cornerRadius: {
 		componentInner: spacers[4],
