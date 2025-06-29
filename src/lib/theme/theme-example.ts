@@ -104,7 +104,14 @@ export const lightTheme = {
 
 	typography: {},
 
-	cornerRadius: {},
+	cornerRadius: {
+		componentInner: spacers[4],
+		componentBase: spacers[8],
+		sectionInner: spacers[12],
+		containerBase: spacers[16],
+		sectionBase: spacers[24],
+		rounded: spacers[999],
+	},
 
 	zIndices: {},
 
