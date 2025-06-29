@@ -1,5 +1,5 @@
 import { Icon } from "../icon";
-import { colors, spacers } from "./tokens";
+import { colors, spacers, zIndices } from "./tokens";
 
 export const lightTheme = {
 	colors: {
@@ -113,7 +113,16 @@ export const lightTheme = {
 		rounded: spacers[999],
 	},
 
-	zIndices: {},
+	zIndices: {
+		softMedium: zIndices.softMedium,
+		surfaceElevated: zIndices.surfaceElevated,
+		overlayContent: zIndices.overlayContent,
+		overlayTooltip: zIndices.overlayTooltip,
+		overlayDragged: zIndices.surfaceDragged,
+		overlayModal: zIndices.overlayModal,
+		overlayNotifications: zIndices.overlayNotification,
+		
+	},
 
 	animation: {
 		base: `0.2s ease-in-out`,
