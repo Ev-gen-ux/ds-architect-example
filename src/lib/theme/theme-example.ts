@@ -1,5 +1,5 @@
 import { Icon } from "../icon";
-import { colors } from "./tokens";
+import { colors, spacers } from "./tokens";
 
 export const lightTheme = {
 	colors: {
@@ -42,7 +42,7 @@ export const lightTheme = {
 				secondary: colors.neutral[400],
 			},
 
-		Icon: {
+		icon: {
 				base: {
 					calm: colors.neutral[50],
 				},
@@ -53,7 +53,52 @@ export const lightTheme = {
 			},
 	},
 
-	spacing: {},
+	spacing: {
+
+		inner: {
+               noGap: spacers[0],
+			   xsClosest: spacers[1],
+			   closest: spacers[2],
+			   close: spacers[4],
+			   related: spacers[8],
+			   grouped: spacers[16],
+		},
+
+        outer: {
+			   close: spacers[8],
+			   related: spacers[16],
+			   grouped: spacers[24],
+			   subSection: spacers[48],
+			   section: spacers[56],
+		},
+
+		paddings: {
+			xxsCompact: spacers[2],
+			xsCompact: spacers[6],
+			compact: spacers[8],
+			compactMedium: spacers[12],
+			default: spacers[16],
+			medium: spacers[20],
+			relaxed: spacers[24],
+			large: spacers[32],
+			section: spacers[48],
+	    },
+
+		height: {
+			xSmall: spacers[4],
+			small: spacers[32],
+			base: spacers[40],
+			large: spacers[40],
+			xLarge: spacers[56],
+	    },
+
+		grid: {
+			columnGap: spacers[16],
+			rowGap: spacers[16],
+			columnCount: spacers[12],
+	    },
+
+	},
 
 	shadows: {},
 
