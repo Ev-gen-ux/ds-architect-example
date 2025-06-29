@@ -1,5 +1,6 @@
 import { Icon } from "../icon";
-import { colors, spacers, zIndices } from "./tokens";
+import { Base } from "../placeholder/placeholder.stories";
+import { colors, spacers, typography, zIndices } from "./tokens";
 
 export const lightTheme = {
 	colors: {
@@ -100,40 +101,163 @@ export const lightTheme = {
 
 	},
 
-	shadows: {
-
-		softMedium: {
-			zIndex: zIndices.softMedium,
-		},
-
-		surfaceElevated: {
-			zIndex: zIndices.surfaceElevated,
-		},
-
-		overlayContent: {
-			zIndex: zIndices.overlayContent,
-		},
-
-		overlayTooltip: {
-			zIndex: zIndices.overlayTooltip,
-		},
-
-		ooverlaymodal: {
-			zIndex: zIndices.overlayModal,
-		},
-
-		overlayNotifications: {
-			zIndex: zIndices.overlayNotification,
-		},
-
-	},
+	shadows: {},
 
 	typography: {
 
+		heading: {
+			h1: {
+				fontFamily: typography.fontFamily.heading,
+				fontSize: typography.fontSize.h1,
+                lineHeight: typography.lineHeight.h1,
+				fontWeight: typography.fontWeight.semiBold,
+			},
+			h2: {
+				fontFamily: typography.fontFamily.heading,
+				fontSize: typography.fontSize.h2,
+                lineHeight: typography.lineHeight.h2,
+				fontWeight: typography.fontWeight.semiBold,
+			},
+			h3: {
+				fontFamily: typography.fontFamily.heading,
+				fontSize: typography.fontSize.h3,
+                lineHeight: typography.lineHeight.h3,
+				fontWeight: typography.fontWeight.semiBold,
+			},
+			h4: {
+				fontFamily: typography.fontFamily.heading,
+				fontSize: typography.fontSize.h4,
+                lineHeight: typography.lineHeight.h4,
+				fontWeight: typography.fontWeight.semiBold,
+			},
+			h5: {
+				fontFamily: typography.fontFamily.heading,
+				fontSize: typography.fontSize.h5,
+                lineHeight: typography.lineHeight.h5,
+				fontWeight: typography.fontWeight.semiBold,
+			},
+			h6: {
+				fontFamily: typography.fontFamily.heading,
+				fontSize: typography.fontSize.h6,
+                lineHeight: typography.lineHeight.h6,
+				fontWeight: typography.fontWeight.semiBold,
+			},
+		},
+
+		},
+
+       text: {
+
+			base: {
+			 medium: {
+				fontFamily: typography.fontFamily.base,
+				fontSize: typography.fontSize.base,
+                lineHeight: typography.lineHeight.base,
+				fontWeight: typography.fontWeight.medium,
+			},
+
+			    regular: {
+				fontFamily: typography.fontFamily.base,
+				fontSize: typography.fontSize.base,
+				lineHeight: typography.lineHeight.base,
+				fontWeight: typography.fontWeight.regular,
+				},
+			},
+
+			small: {
+				medium: {
+				   fontFamily: typography.fontFamily.base,
+				   fontSize: typography.fontSize.small,
+				   lineHeight: typography.lineHeight.base,
+				   fontWeight: typography.fontWeight.medium,
+			   },
+   
+				regular: {
+				   fontFamily: typography.fontFamily.base,
+				   fontSize: typography.fontSize.small,
+				   lineHeight: typography.lineHeight.base,
+				   fontWeight: typography.fontWeight.regular,
+				   },
+			   },
+
+			   extraSmall: {
+				medium: {
+				   fontFamily: typography.fontFamily.base,
+				   fontSize: typography.fontSize.extraSmall,
+				   lineHeight: typography.lineHeight.extraSmall,
+				   fontWeight: typography.fontWeight.medium,
+			   },
+   
+				regular: {
+				   fontFamily: typography.fontFamily.base,
+				   fontSize: typography.fontSize.extraSmall,
+				   lineHeight: typography.lineHeight.extraSmall,
+				   fontWeight: typography.fontWeight.regular,
+				   },
+			   },
+
+		},
+
+		component: {
+
+			base: {
+			 semiBold: {
+				fontFamily: typography.fontFamily.base,
+				fontSize: typography.fontSize.base,
+                lineHeight: typography.lineHeight.base,
+				fontWeight: typography.fontWeight.semiBold,
+			},
+
+			    medium: {
+				fontFamily: typography.fontFamily.base,
+				fontSize: typography.fontSize.base,
+				lineHeight: typography.lineHeight.base,
+				fontWeight: typography.fontWeight.medium,
+				},
+			},
+
+			small: {
+				semiBold: {
+				   fontFamily: typography.fontFamily.base,
+				   fontSize: typography.fontSize.small,
+				   lineHeight: typography.lineHeight.small,
+				   fontWeight: typography.fontWeight.semiBold,
+			   },
+   
+				medium: {
+				   fontFamily: typography.fontFamily.base,
+				   fontSize: typography.fontSize.small,
+				   lineHeight: typography.lineHeight.small,
+				   fontWeight: typography.fontWeight.medium,
+				   },
+			   },
+
+			   extraSmall: {
+				semiBold: {
+				   fontFamily: typography.fontFamily.base,
+				   fontSize: typography.fontSize.extraSmall,
+				   lineHeight: typography.lineHeight.extraSmall,
+				   fontWeight: typography.fontWeight.semiBold,
+			   },
+   
+				medium: {
+				   fontFamily: typography.fontFamily.base,
+				   fontSize: typography.fontSize.extraSmall,
+				   lineHeight: typography.lineHeight.extraSmall,
+				   fontWeight: typography.fontWeight.medium,
+				   },
+			   },
+
+		},
+		
+
+        
 	},
+		
 
 	cornerRadius: {
-		componentInner: spacers[4],
+
+		componentInner: spacers.[4],
 		componentBase: spacers[8],
 		sectionInner: spacers[12],
 		containerBase: spacers[16],
@@ -155,7 +279,9 @@ export const lightTheme = {
 	animation: {
 		base: `0.2s ease-in-out`,
 	},
-};
+	
+
+}; 
 
 export const darkTheme = {
 	...lightTheme,
