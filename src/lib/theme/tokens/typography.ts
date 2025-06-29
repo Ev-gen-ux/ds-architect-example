@@ -12,7 +12,7 @@ export const typography = {
 		h2: spacers[40],
 		h3: spacers[32],
 		h4: spacers[24],
-		h5: spacers[18],
+		h5: spacers[20],
 		h6: spacers[16],
 		base: spacers[16],
 		small: spacers[14],
