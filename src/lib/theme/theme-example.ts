@@ -1,7 +1,6 @@
 import { Icon } from "../icon";
 import { Base } from "../placeholder/placeholder.stories";
 import { colors, spacers, typography, zIndices } from "./tokens";
-S
 
 export const lightTheme = {
 	colors: {
@@ -145,7 +144,7 @@ export const lightTheme = {
 			},
 		},
 
-		},
+	
 
        text: {
 
@@ -216,6 +215,9 @@ export const lightTheme = {
 				fontWeight: typography.fontWeight.medium,
 				},
 			},
+		},
+
+
 
 			small: {
 				semiBold: {
@@ -231,33 +233,33 @@ export const lightTheme = {
 				   lineHeight: typography.lineHeight.small,
 				   fontWeight: typography.fontWeight.medium,
 				   },
-			   },
+			},
 
 			   extraSmall: {
-				semiBold: {
+				  semiBold: {
 				   fontFamily: typography.fontFamily.base,
 				   fontSize: typography.fontSize.extraSmall,
 				   lineHeight: typography.lineHeight.extraSmall,
 				   fontWeight: typography.fontWeight.semiBold,
-			   },
+			     },
    
-				medium: {
+				 medium: {
 				   fontFamily: typography.fontFamily.base,
 				   fontSize: typography.fontSize.extraSmall,
 				   lineHeight: typography.lineHeight.extraSmall,
 				   fontWeight: typography.fontWeight.medium,
-				   },
-			   },
+				 },
+			    },
 
-		},
-		
-
-        
 	},
 		
 
+        
+	
+		
+
 	cornerRadius: {
-        componentInner: spacers.[4],
+        componentInner: spacers[4],
 		componentBase: spacers[8],
 		sectionInner: spacers[12],
 		containerBase: spacers[16],
@@ -279,7 +281,7 @@ export const lightTheme = {
 	animation: {
 		base: `0.2s ease-in-out`,
 	},
-	
+
 
 }; 
 
