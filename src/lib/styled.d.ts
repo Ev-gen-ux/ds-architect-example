@@ -4,7 +4,7 @@ declare module "styled-components" {
     export interface DefaultTheme {
         colors: {
             bg: {
-                disabled: string;
+
                 global: {
                     calm: string;
                 },
@@ -32,6 +32,12 @@ declare module "styled-components" {
                 },
             },
 
+            border: {
+                subSection: {
+                    calm: string;
+                },
+            },
+
             text: {
                 base: string;
                 secondary: string;
@@ -47,8 +53,14 @@ declare module "styled-components" {
                 },
             },
         },
-        //typography: {},
+
+
+        //typography: {}
         //spacing: {},
         //borderRadius: {},
-    }
-}
+
+
+
+
+    },
+},
