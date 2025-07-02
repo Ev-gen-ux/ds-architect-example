@@ -258,7 +258,7 @@ export const lightTheme = {
 
 
 
-	cornerRadius: {
+	borderRadius: {
 		componentInner: spacers[4],
 		componentBase: spacers[8],
 		sectionInner: spacers[12],

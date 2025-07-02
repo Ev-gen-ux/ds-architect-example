@@ -1,5 +1,5 @@
 import { DefaultTheme } from "styled-components";
-import { colors } from "./tokens";
+import { colors, spacers } from "./tokens";
 
 
 export const lightTheme: DefaultTheme = {
@@ -69,6 +69,14 @@ export const lightTheme: DefaultTheme = {
 
     },
 
+      borderRadius: {
+		componentInner: spacers[4],
+		componentBase: spacers[8],
+		sectionInner: spacers[12],
+		containerBase: spacers[16],
+		sectionBase: spacers[24],
+		rounded: spacers[999],
+	},
 };
 
     export const darkTheme: DefaultTheme = {
