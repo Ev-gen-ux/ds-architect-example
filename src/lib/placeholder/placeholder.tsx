@@ -1,4 +1,6 @@
 import { FC } from "react";
+import styled from "styled-components";
+
 
 export interface PlaceholderProps {
 	/**
@@ -7,9 +9,13 @@ export interface PlaceholderProps {
 	text: string;
 }
 
+const StyledPlaceholder = styled.p`
+    color: ${props =>props.theme.colors.text.base};
+`
+
 /**
  * Тестовый компонент заглушка
  */
 export const Placeholder: FC<PlaceholderProps> = ({ text = "Привет" }) => {
-	return <div>{text}</div>;
+	return <StyledPlaceholder>{text}</StyledPlaceholder>;
 };
