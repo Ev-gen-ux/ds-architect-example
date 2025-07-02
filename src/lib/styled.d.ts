@@ -52,7 +52,24 @@ declare module "styled-components" {
                     loud: string;
                 },
             },
+
+            link: {
+                bakcground: {
+                    calm: {
+                        enabled: string;
+                    },
+                },
+                label: {
+                    loud: {
+                        enabled: string;
+                        hover: string;
+                        active: string;
+                    },
+                },
+            },
+
         },
+
 
 
         //typography: {}
