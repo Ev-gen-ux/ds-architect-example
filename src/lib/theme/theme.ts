@@ -51,6 +51,22 @@ export const lightTheme: DefaultTheme = {
             },
 
         },
+
+    link:{
+        bakcground: {
+            calm: {
+                enabled: colors.blue[50],
+            },
+        },
+        label: {
+            loud: {
+                enabled: colors.blue[400],
+                hover: colors.blue[500],
+                active: colors.blue[600],
+            },
+        },
+    },
+
     },
 
 };
@@ -105,5 +121,21 @@ export const lightTheme: DefaultTheme = {
                     loud: colors.neutral[300],
                 },
             },
+
+            link:{
+                bakcground: {
+                    calm: {
+                        enabled: colors.blue[50],
+                    },
+                },
+                label: {
+                    loud: {
+                        enabled: colors.blue[200],
+                        hover: colors.blue[100],
+                        active: colors.blue[50],
+                    },
+                },
+            },
+
         },
     };
