@@ -74,7 +74,15 @@ declare module "styled-components" {
 
         //typography: {}
         //spacing: {},
-        //borderRadius: {},
+
+        borderRadius: {
+            componentInner: string;
+            componentBase: string;
+            sectionInner: string;
+            containerBase: string;
+            sectionBase: string;
+            rounded: string;
+        },
 
 
 
