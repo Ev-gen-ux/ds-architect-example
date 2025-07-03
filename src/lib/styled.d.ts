@@ -78,7 +78,343 @@ declare module "styled-components" {
                 },
             },
 
-            
+            button: {
+                primary: {
+                    background: {
+                        enabled: string;
+                        hover: string;
+                        active: string;
+                        disabled: string;
+                    },
+
+                    label: {
+                        enabled: string;
+                        disabled: string;
+                    },
+
+                    border: {
+                        focus: string;
+                        disabled: string;
+                    },
+
+                    icon: {
+                        enabled: string;
+                        disabled: string;
+                    },
+                },
+
+                outline: {
+                    background: {
+                        hover: string;
+                        active: string;
+                    },
+                    label: {
+                        enabled: string;
+                        disabled: string;
+                    },
+                    border: {
+                        enabled: string;
+                        focus: string;
+                        disabled: string;
+                    },
+                    icon: {
+                        enabled: string;
+                        disabled: string;
+                    },
+                },
+
+                flat: {
+                    background: {
+                        hover: string;
+                        active: string;
+                    },
+                    label: {
+                        enabled: string;
+                        disabled: string;
+                    },
+                    border: {
+                        focus: string;
+                    },
+                    icon: {
+                        enabled: string;
+                        disabled: string;
+                    },
+                },
+
+                icon: {
+                    primary: {
+                        background: {
+                            enabled: string;
+                            hover: string;
+                            active: string;
+                        },
+                        border: {
+                            focus: string;
+                        },
+                        icon: {
+                            enabled: string;
+                            disabled: string;
+                        },
+                    },
+                    secondary: {
+                        background: {
+                            hover: string;
+                            active: string;
+                        },
+                        border: {
+                            focus: string;
+                        },
+                        icon: {
+                            enabled: string;
+                            disabled: string;
+                        },
+                    },
+                },
+
+            },
+
+
+
+            linkButton: {
+
+                primary: {
+                    label: {
+                        enabled: string;
+                        hover: string;
+                        active: string;
+                        focus: string;
+                        disabled: string;
+                    },
+                    icon: {
+                        enabled: string;
+                        hover: string;
+                        active: string;
+                        focus: string;
+                        disabled: string;
+                    },
+                },
+
+                secondary: {
+                    label: {
+                        enabled: string;
+                        hover: string;
+                        active: string;
+                        focus: string;
+                        disabled: string;
+                    },
+                    icon: {
+                        enabled: string;
+                        hover: string;
+                        active: string;
+                        focus: string;
+                        disabled: string;
+                    },
+                },
+            },
+
+            toggleButton: {
+                primary: {
+                    background: {
+                        enabled: string;
+                        hover: string;
+                        active: string;
+                        disabled: string;
+                    },
+                    border: {
+                        enabled: string;
+                        disabled: string;
+                    },
+                    label: {
+                        enabled: string;
+                        disabled: string;
+                    },
+                    icon: {
+                        disabled: string;
+                    },
+                },
+                secondary: {
+                    background: {
+                        enabled: string;
+                        hover: string;
+                        active: string;
+                        disabled: string;
+                    },
+                    border: {
+                        enabled: string;
+                        disabled: string;
+                    },
+                    label: {
+                        enabled: string;
+                        disabled: string;
+                    },
+                    icon: {
+                        disabled: string;
+                    },
+                },
+            },
+
+            splitButton: {
+                primary: {
+                    button: {
+                        background: {
+                            enabled: string;
+                            hover: string;
+                            active: string;
+                            disabled: string;
+                        },
+                        label: {
+                            enabled: string;
+                            disabled: string;
+                        },
+                        border: {
+                            disabled: string;
+                        },
+                        icon: {
+                            enabled: string;
+                            disabled: string;
+                        },
+                    },
+                    split: {
+                        background: {
+                            enabled: string;
+                            hover: string;
+                            active: string;
+                            disabled: string;
+                        },
+                        label: {
+                            enabled: string;
+                            disabled: string;
+                        },
+                        border: {
+                            disabled: string;
+                        },
+                        icon: {
+                            enabled: string;
+                            disabled: string;
+                        },
+                    },
+                },
+
+
+                secondary: {
+                    button: {
+                        background: {
+                            enabled: string;
+                            hover: string;
+                            active: string;
+                            disabled: string;
+                        },
+                        label: {
+                            enabled: string;
+                            disabled: string;
+                        },
+                        border: {
+                            disabled: string;
+                        },
+                        icon: {
+                            enabled: string;
+                            disabled: string;
+                        },
+                    },
+                    split: {
+                        background: {
+                            enabled: string;
+                            hover: string;
+                            active: string;
+                            disabled: string;
+                        },
+                        label: {
+                            enabled: string;
+                            disabled: string;
+                        },
+                        border: {
+                            disabled: string;
+                        },
+                        icon: {
+                            enabled: string;
+                            disabled: string;
+                        },
+                    },
+                },
+
+            },
+
+            input: {
+                background: {
+                    enabled: string;
+                    disabled: string;
+                },
+                label: {
+                    enabled: string;
+                    disabled: string;
+                    readOnly: string;
+                },
+                required: {
+                    enabled: string;
+                },
+
+                border: {
+                    enabled: string;
+                    hover: string;
+                    focus: string;
+                    success: string;
+                    error: string;
+                    disabled: string;
+                },
+                icon: {
+                    enabled: string;
+                },
+                textPlaceholder: {
+                    enabled: string;
+                    disabled: string;
+                },
+                textPlaceholderValue: {
+                    enabled: string;
+                },
+
+                inlineMessage: {
+                    default: string;
+                    error: string;
+                },
+
+                cursor: {
+                    enabled: string;
+                },
+            },
+
+            checkbox: {
+                background: {
+                    enabled: string;
+                    checked: string;
+                    error: string;
+                    disabled: string;
+                },
+                border: {
+                    enabled: string;
+                    disabled: string;
+                },
+                controlMark: {
+                    enabled: string;
+                    disabled: string;
+                },
+            },
+
+            radioButton: {
+                background: {
+                    enabled: string;
+                    checked: string;
+                    error: string;
+                    disabled: string;
+                },
+                border: {
+                    enabled: string;
+                    disabled: string;
+                },
+                controlMark: {
+                    enabled: string;
+                    disabled: string;
+                },
+            },
 
             link: {
                 bakcground: {
