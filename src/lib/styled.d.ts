@@ -243,10 +243,7 @@ declare module "styled-components" {
                         enabled: string;
                         disabled: string;
                     },
-                    label: {
-                        enabled: string;
-                        disabled: string;
-                    },
+                
                     icon: {
                         disabled: string;
                     },
@@ -260,7 +257,6 @@ declare module "styled-components" {
                             enabled: string;
                             hover: string;
                             active: string;
-                            disabled: string;
                         },
                         label: {
                             enabled: string;
@@ -279,13 +275,13 @@ declare module "styled-components" {
                             enabled: string;
                             hover: string;
                             active: string;
-                            disabled: string;
                         },
                         label: {
                             enabled: string;
                             disabled: string;
                         },
                         border: {
+                            enabled: string;
                             disabled: string;
                         },
                         icon: {
@@ -321,13 +317,13 @@ declare module "styled-components" {
                             enabled: string;
                             hover: string;
                             active: string;
-                            disabled: string;
                         },
                         label: {
                             enabled: string;
                             disabled: string;
                         },
                         border: {
+                            enabled: string;
                             disabled: string;
                         },
                         icon: {
@@ -391,7 +387,7 @@ declare module "styled-components" {
                 },
                 border: {
                     enabled: string;
-                    disabled: string;
+                    error: string;
                 },
                 controlMark: {
                     enabled: string;
@@ -408,7 +404,7 @@ declare module "styled-components" {
                 },
                 border: {
                     enabled: string;
-                    disabled: string;
+                    error: string;
                 },
                 controlMark: {
                     enabled: string;
