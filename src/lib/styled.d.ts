@@ -552,5 +552,5 @@ declare module "styled-components" {
 
 
 
-    },
-},
+    }
+}
