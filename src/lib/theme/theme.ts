@@ -52,98 +52,98 @@ export const lightTheme: DefaultTheme = {
 
         },
 
-    link:{
-        bakcground: {
-            calm: {
-                enabled: colors.blue[50],
+        link: {
+            bakcground: {
+                calm: {
+                    enabled: colors.blue[50],
+                },
+            },
+            label: {
+                loud: {
+                    enabled: colors.blue[400],
+                    hover: colors.blue[500],
+                    active: colors.blue[600],
+                },
             },
         },
-        label: {
-            loud: {
-                enabled: colors.blue[400],
-                hover: colors.blue[500],
-                active: colors.blue[600],
-            },
-        },
-    },
 
     },
 
-      borderRadius: {
-		componentInner: spacers[4],
-		componentBase: spacers[8],
-		sectionInner: spacers[12],
-		containerBase: spacers[16],
-		sectionBase: spacers[24],
-		rounded: spacers[999],
-	},
+    borderRadius: {
+        componentInner: spacers[4],
+        componentBase: spacers[8],
+        sectionInner: spacers[12],
+        containerBase: spacers[16],
+        sectionBase: spacers[24],
+        rounded: spacers[999],
+    },
 };
 
-    export const darkTheme: DefaultTheme = {
-        ...lightTheme,
-        colors: {
-            bg: {
-                global: {
-                    calm: colors.black[900],
-                },
-
-                body: {
-                    calm: colors.blue[800],
-                },
-                section: {
-                    calm: colors.blue[900],
-                    calmest: colors.blue[800],
-                },
-                subSection: {
-                    calm: colors.blue[800],
-                },
-                container: {
-                    calmest: colors.blue[900],
-                },
-                benefitCard: {
-                    calm: colors.blue[800],
-                },
-                sideBar: {
-                    calmest: colors.blue[800],
-                },
-                footer: {
-                    calm: colors.blue[800],
-                },
+export const darkTheme: DefaultTheme = {
+    ...lightTheme,
+    colors: {
+        bg: {
+            global: {
+                calm: colors.black[900],
             },
 
-            border: {
-                subSection: {
-                    calm: colors.neutral[100],
-                },
+            body: {
+                calm: colors.blue[800],
             },
-            text: {
-                base: colors.neutral[50],
-                secondary: colors.neutral[200],
+            section: {
+                calm: colors.blue[900],
+                calmest: colors.blue[800],
             },
-            icon: {
-                base: {
-                    calmest: colors.neutral[50],
-                },
-                secondary: {
-                    calm: colors.neutral[300],
-                    loud: colors.neutral[300],
-                },
+            subSection: {
+                calm: colors.blue[800],
             },
-
-            link:{
-                bakcground: {
-                    calm: {
-                        enabled: colors.blue[50],
-                    },
-                },
-                label: {
-                    loud: {
-                        enabled: colors.blue[200],
-                        hover: colors.blue[100],
-                        active: colors.blue[50],
-                    },
-                },
+            container: {
+                calmest: colors.blue[900],
             },
-
+            benefitCard: {
+                calm: colors.blue[800],
+            },
+            sideBar: {
+                calmest: colors.blue[800],
+            },
+            footer: {
+                calm: colors.blue[800],
+            },
         },
-    };
+
+        border: {
+            subSection: {
+                calm: colors.neutral[100],
+            },
+        },
+        text: {
+            base: colors.neutral[50],
+            secondary: colors.neutral[200],
+        },
+        icon: {
+            base: {
+                calmest: colors.neutral[50],
+            },
+            secondary: {
+                calm: colors.neutral[300],
+                loud: colors.neutral[300],
+            },
+        },
+
+        link: {
+            bakcground: {
+                calm: {
+                    enabled: colors.blue[50],
+                },
+            },
+            label: {
+                loud: {
+                    enabled: colors.blue[200],
+                    hover: colors.blue[100],
+                    active: colors.blue[50],
+                },
+            },
+        },
+
+    },
+};
