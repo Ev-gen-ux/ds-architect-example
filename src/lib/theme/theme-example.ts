@@ -254,10 +254,6 @@ export const lightTheme = {
 	},
 
 
-
-
-
-
 	borderRadius: {
 		componentInner: spacers[4],
 		componentBase: spacers[8],
