@@ -2,7 +2,7 @@ import { DefaultTheme } from "styled-components";
 import { colors, spacers, typography, zIndices } from "./tokens";
 
 
-export const lightTheme = {
+export const lightTheme: DefaultTheme = {
     colors: {
         bg: {
             global: {
@@ -22,7 +22,7 @@ export const lightTheme = {
                 calmest: colors.neutral[25],
             },
             benefitCard: {
-                calme: colors.white,
+                calmest: colors.white,
             },
             sideBar: {
                 calmest: colors.white,
@@ -45,7 +45,7 @@ export const lightTheme = {
 
         icon: {
             base: {
-                calm: colors.neutral[50],
+                calmest: colors.neutral[50],
             },
             secondary: {
                 calm: colors.neutral[300],
@@ -85,12 +85,15 @@ export const lightTheme = {
             section: spacers[48],
         },
 
+
+
         height: {
             xSmall: spacers[4],
             small: spacers[32],
             base: spacers[40],
-            large: spacers[40],
+            large: spacers[48],
             xLarge: spacers[56],
+            xxLarge: spacers[64],
         },
 
         grid: {
@@ -105,150 +108,74 @@ export const lightTheme = {
 
     typography: {
 
-        heading: {
-            h1: {
-                fontFamily: typography.fontFamily.heading,
-                fontSize: typography.fontSize.h1,
-                lineHeight: typography.lineHeight.h1,
-                fontWeight: typography.fontWeight.semiBold,
-            },
-            h2: {
-                fontFamily: typography.fontFamily.heading,
-                fontSize: typography.fontSize.h2,
-                lineHeight: typography.lineHeight.h2,
-                fontWeight: typography.fontWeight.semiBold,
-            },
-            h3: {
-                fontFamily: typography.fontFamily.heading,
-                fontSize: typography.fontSize.h3,
-                lineHeight: typography.lineHeight.h3,
-                fontWeight: typography.fontWeight.semiBold,
-            },
-            h4: {
-                fontFamily: typography.fontFamily.heading,
-                fontSize: typography.fontSize.h4,
-                lineHeight: typography.lineHeight.h4,
-                fontWeight: typography.fontWeight.semiBold,
-            },
-            h5: {
-                fontFamily: typography.fontFamily.heading,
-                fontSize: typography.fontSize.h5,
-                lineHeight: typography.lineHeight.h5,
-                fontWeight: typography.fontWeight.semiBold,
-            },
-            h6: {
-                fontFamily: typography.fontFamily.heading,
-                fontSize: typography.fontSize.h6,
-                lineHeight: typography.lineHeight.h6,
-                fontWeight: typography.fontWeight.semiBold,
-            },
+        fontFamily: {
+            heading: typography.fontFamily.base,
+            text: typography.fontFamily.base,
+            component: typography.fontFamily.base,
+            monospace: typography.fontFamily.monospace
         },
 
-
-
-        text: {
-
-            base: {
-                medium: {
-                    fontFamily: typography.fontFamily.base,
-                    fontSize: typography.fontSize.base,
-                    lineHeight: typography.lineHeight.base,
-                    fontWeight: typography.fontWeight.medium,
-                },
-
-                regular: {
-                    fontFamily: typography.fontFamily.base,
-                    fontSize: typography.fontSize.base,
-                    lineHeight: typography.lineHeight.base,
-                    fontWeight: typography.fontWeight.regular,
-                },
+        fontSize: {
+            heading: {
+                h1: spacers[48],
+                h2: spacers[40],
+                h3: spacers[32],
+                h4: spacers[24],
+                h5: spacers[20],
+                h6: spacers[16],
             },
 
-            small: {
-                medium: {
-                    fontFamily: typography.fontFamily.base,
-                    fontSize: typography.fontSize.small,
-                    lineHeight: typography.lineHeight.base,
-                    fontWeight: typography.fontWeight.medium,
-                },
-
-                regular: {
-                    fontFamily: typography.fontFamily.base,
-                    fontSize: typography.fontSize.small,
-                    lineHeight: typography.lineHeight.base,
-                    fontWeight: typography.fontWeight.regular,
-                },
+            text: {
+                base: spacers[16],
+                small: spacers[14],
+                extraSmall: spacers[12],
             },
 
-            extraSmall: {
-                medium: {
-                    fontFamily: typography.fontFamily.base,
-                    fontSize: typography.fontSize.extraSmall,
-                    lineHeight: typography.lineHeight.extraSmall,
-                    fontWeight: typography.fontWeight.medium,
-                },
+            component: {
+                base: spacers[16],
+                small: spacers[14],
+                extraSmall: spacers[12],
+            },
 
-                regular: {
-                    fontFamily: typography.fontFamily.base,
-                    fontSize: typography.fontSize.extraSmall,
-                    lineHeight: typography.lineHeight.extraSmall,
-                    fontWeight: typography.fontWeight.regular,
-                },
+            monospace: {
+                base: spacers[14],
             },
 
         },
 
-        component: {
-
-            base: {
-                semiBold: {
-                    fontFamily: typography.fontFamily.base,
-                    fontSize: typography.fontSize.base,
-                    lineHeight: typography.lineHeight.base,
-                    fontWeight: typography.fontWeight.semiBold,
-                },
-
-                medium: {
-                    fontFamily: typography.fontFamily.base,
-                    fontSize: typography.fontSize.base,
-                    lineHeight: typography.lineHeight.base,
-                    fontWeight: typography.fontWeight.medium,
-                },
-            },
+        fontWeight: {
+            regular: typography.fontWeight.regular,
+            medium: typography.fontWeight.medium,
+            semiBold: typography.fontWeight.semiBold,
         },
 
 
-
-        small: {
-            semiBold: {
-                fontFamily: typography.fontFamily.base,
-                fontSize: typography.fontSize.small,
-                lineHeight: typography.lineHeight.small,
-                fontWeight: typography.fontWeight.semiBold,
+        lineHeight: {
+            heading: {
+                h1: spacers[56],
+                h2: spacers[48],
+                h3: spacers[40],
+                h4: spacers[32],
+                h5: spacers[32],
+                h6: spacers[24],
             },
 
-            medium: {
-                fontFamily: typography.fontFamily.base,
-                fontSize: typography.fontSize.small,
-                lineHeight: typography.lineHeight.small,
-                fontWeight: typography.fontWeight.medium,
-            },
-        },
-
-        extraSmall: {
-            semiBold: {
-                fontFamily: typography.fontFamily.base,
-                fontSize: typography.fontSize.extraSmall,
-                lineHeight: typography.lineHeight.extraSmall,
-                fontWeight: typography.fontWeight.semiBold,
+            text: {
+                base: spacers[24],
+                smass: spacers[20],
+                extraSmall: spacers[16],
             },
 
-            medium: {
-                fontFamily: typography.fontFamily.base,
-                fontSize: typography.fontSize.extraSmall,
-                lineHeight: typography.lineHeight.extraSmall,
-                fontWeight: typography.fontWeight.medium,
+            component: {
+                base: spacers[24],
+                smass: spacers[20],
+                extraSmall: spacers[16],
             },
+
+            monospace: {
+                base: spacers[20],
+            }
+
         },
 
     },
@@ -655,7 +582,7 @@ export const lightTheme = {
 
 };
 
-export const darkTheme = {
+export const darkTheme: DefaultTheme = {
     ...lightTheme,
     colors: {
         bg: {
@@ -676,7 +603,7 @@ export const darkTheme = {
                 calmest: colors.blue[900],
             },
             benefitCard: {
-                calme: colors.blue[800],
+                calmest: colors.blue[800],
             },
             sideBar: {
                 calmest: colors.blue[800],
@@ -899,7 +826,6 @@ export const darkTheme = {
                 },
 
                 icon: {
-                    enabled: colors.blue[300],
                     disabled: colors.neutral[300],
                 },
             },
@@ -936,6 +862,7 @@ export const darkTheme = {
                         disabled: colors.neutral[300],
                     },
                     border: {
+                        enabled: colors.neutral[400],
                         disabled: colors.neutral[500],
                     },
                     icon: {
