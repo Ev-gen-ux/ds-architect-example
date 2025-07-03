@@ -1,3 +1,4 @@
+import { error } from "console";
 import { Icon } from "../icon";
 import { Base } from "../placeholder/placeholder.stories";
 import { colors, spacers, typography, zIndices } from "./tokens";
@@ -274,30 +275,364 @@ export const lightTheme = {
 
 	},
 
-	 avatar: {
-                backgroun: {
-                    enabled: colors.white,
-                    hover: colors.neutral[25],
-                    active: colors.neutral[50],
-                },
-                border: {
-                    default: colors.neutral[200],
-                },
+	avatar: {
+		backgroun: {
+			enabled: colors.white,
+			hover: colors.neutral[25],
+			active: colors.neutral[50],
+		},
+		border: {
+			default: colors.neutral[200],
+		},
 
-                label: {
-                    default: colors.neutral[700],
-                    hover: colors.neutral[700],
-                    active: colors.neutral[700],
-                },
-                statusMark: {
-                    background: {
-                        online: colors.green[300],
-                    },
-                    border: {
-                        calm: colors.white,
-                    }
-                },
-            },
+		label: {
+			default: colors.neutral[700],
+			hover: colors.neutral[700],
+			active: colors.neutral[700],
+		},
+		statusMark: {
+			background: {
+				online: colors.green[300],
+			},
+			border: {
+				calm: colors.white,
+			}
+		},
+	},
+
+	button: {
+		primary: {
+			background: {
+				enabled: colors.blue[500],
+				hover: colors.blue[600],
+				active: colors.blue[700],
+				disabled: colors.neutral[100],
+			},
+
+			label: {
+				enabled: colors.neutral[50],
+				disabled: colors.neutral[300],
+			},
+
+			border: {
+				focus: colors.blue[200],
+				disabled: colors.neutral[100],
+			},
+
+			icon: {
+				enabled: colors.neutral[50],
+				disabled: colors.neutral[300],
+			},
+		},
+
+		outline: {
+			background: {
+				hover: colors.neutral[50],
+				active: colors.neutral[100],
+			},
+			label: {
+				enabled: colors.neutral[700],
+				disabled: colors.neutral[300],
+			},
+			border: {
+				enabled: colors.neutral[400],
+				focus: colors.blue[200],
+				disabled: colors.neutral[100],
+			},
+			icon: {
+				enabled: colors.neutral[400],
+				disabled: colors.neutral[300],
+			},
+		},
+
+		flat: {
+			background: {
+				hover: colors.neutral[50],
+				active: colors.neutral[100],
+			},
+			label: {
+				enabled: colors.neutral[700],
+				disabled: colors.neutral[300],
+			},
+			border: {
+				focus: colors.blue[200],
+			},
+			icon: {
+				enabled: colors.neutral[400],
+				disabled: colors.neutral[300],
+			},
+		},
+
+		icon: {
+			primary: {
+				background: {
+					enabled: colors.blue[50],
+					hover: colors.blue[100],
+					active: colors.blue[200],
+				},
+				border: {
+					focus: colors.blue[200],
+				},
+				icon: {
+					enabled: colors.blue[500],
+					disabled: colors.neutral[300],
+				},
+			},
+			secondary: {
+				background: {
+					hover: colors.neutral[50],
+					active: colors.neutral[100],
+				},
+				border: {
+					focus: colors.blue[200],
+				},
+				icon: {
+					enabled: colors.neutral[400],
+					disabled: colors.neutral[300],
+				},
+			},
+		},
+
+	},
+
+
+
+	linkButton: {
+
+		primary: {
+			label: {
+				enabled: colors.blue[500],
+				hover: colors.blue[600],
+				active: colors.blue[700],
+				focus: colors.blue[500],
+				disabled: colors.neutral[300],
+			},
+			icon: {
+				enabled: colors.blue[500],
+				hover: colors.blue[600],
+				active: colors.blue[700],
+				focus: colors.blue[500],
+				disabled: colors.neutral[300],
+			},
+		},
+
+		secondary: {
+			label: {
+				enabled: colors.neutral[700],
+				hover: colors.neutral[600],
+				active: colors.neutral[500],
+				focus: colors.neutral[700],
+				disabled: colors.neutral[300],
+			},
+			icon: {
+				enabled: colors.neutral[700],
+				hover: colors.neutral[600],
+				active: colors.neutral[500],
+				focus: colors.neutral[700],
+				disabled: colors.neutral[300],
+			},
+		},
+	},
+
+	toggleButton: {
+		primary: {
+			background: {
+				enabled: colors.white,
+				hover: colors.neutral[25],
+				active: colors.neutral[50],
+				disabled: colors.neutral[100],
+			},
+			border: {
+				enabled: colors.neutral[200],
+				disabled: colors.neutral[100],
+			},
+			label: {
+				enabled: colors.neutral[700],
+				disabled: colors.neutral[300],
+			},
+			icon: {
+				disabled: colors.neutral[300],
+			},
+		},
+		secondary: {
+			background: {
+				enabled: colors.white,
+				hover: colors.neutral[25],
+				active: colors.neutral[25],
+				disabled: colors.neutral[100],
+			},
+			border: {
+				enabled: colors.neutral[200],
+				disabled: colors.neutral[100],
+			},
+
+			icon: {
+				enabled: colors.neutral[700],
+				disabled: colors.neutral[300],
+			},
+		},
+	},
+
+	splitButton: {
+		primary: {
+			button: {
+				background: {
+					enabled: colors.blue[500],
+					hover: colors.blue[600],
+					active: colors.blue[700],
+				},
+				label: {
+					enabled: colors.neutral[50],
+					disabled: colors.neutral[300],
+				},
+				border: {
+					disabled: colors.neutral[100],
+				},
+				icon: {
+					enabled: colors.neutral[50],
+					disabled: colors.neutral[300],
+				},
+			},
+			split: {
+				background: {
+					enabled: colors.blue[500],
+					hover: colors.blue[600],
+					active: colors.blue[700],
+				},
+				label: {
+					enabled: colors.neutral[50],
+					disabled: colors.neutral[300],
+				},
+				border: {
+					disabled: colors.neutral[300],
+				},
+				icon: {
+					enabled: colors.neutral[50],
+					disabled: colors.neutral[300],
+				},
+			},
+		},
+
+
+		secondary: {
+			button: {
+				background: {
+					enabled: colors.white,
+					hover: colors.neutral[25],
+					active: colors.neutral[50],
+				},
+				label: {
+					enabled: colors.neutral[700],
+					disabled: colors.neutral[300],
+				},
+				border: {
+					enabled: colors.neutral[200],
+					disabled: colors.neutral[100],
+				},
+				icon: {
+					enabled: colors.neutral[700],
+					disabled: colors.neutral[300],
+				},
+			},
+			split: {
+				background: {
+					enabled: colors.white,
+					hover: colors.neutral[25],
+					active: colors.neutral[50],
+				},
+				label: {
+					enabled: colors.neutral[50],
+					disabled: colors.neutral[300],
+				},
+				border: {
+					enabled: colors.neutral[200],
+					disabled: colors.neutral[100],
+				},
+				icon: {
+					enabled: colors.neutral[700],
+					disabled: colors.neutral[300],
+				},
+			},
+		},
+
+	},
+
+	input: {
+		background: {
+			enabled: colors.neutral[25],
+			disabled: colors.white,
+		},
+		label: {
+			enabled: colors.neutral[700],
+			disabled: colors.neutral[300],
+			readOnly: colors.neutral[400],
+		},
+		required: {
+			enabled: colors.red[500],
+		},
+
+		border: {
+			enabled: colors.neutral[300],
+			hover: colors.blue[400],
+			focus: colors.blue[500],
+			success: colors.green[500],
+			error: colors.red[500],
+			disabled: colors.neutral[100],
+		},
+		icon: {
+			enabled: colors.neutral[300],
+		},
+		textPlaceholder: {
+			enabled: colors.neutral[300],
+			disabled: colors.neutral[200],
+		},
+		textPlaceholderValue: {
+			enabled: colors.neutral[800],
+		},
+
+		inlineMessage: {
+			default: colors.neutral[400],
+			error: colors.red[500],
+		},
+
+		cursor: {
+			enabled: colors.neutral[400],
+		},
+	},
+
+	checkbox: {
+		background: {
+			enabled: colors.white,
+			checked: colors.blue[500],
+			error: colors.red[500],
+			disabled: colors.neutral[100],
+		},
+		border: {
+			enabled: colors.neutral[300],
+			error: colors.red[500],
+		},
+		controlMark: {
+			enabled: colors.neutral[50],
+			disabled: colors.neutral[300],
+		},
+	},
+
+	radioButton: {
+		background: {
+			enabled: colors.white,
+			checked: colors.blue[500],
+			error: colors.red[500],
+			disabled: colors.neutral[100],
+		},
+		border: {
+			enabled: colors.neutral[300],
+			error: colors.red[500],
+		},
+		controlMark: {
+			enabled: colors.neutral[50],
+			disabled: colors.neutral[300],
+		},
+	},
 
 	link: {
 		bakcground: {
@@ -373,30 +708,365 @@ export const darkTheme = {
 			},
 		},
 
-		 avatar: {
-                backgroun: {
-                    enabled: colors.neutral[800],
-                    hover: colors.neutral[700],
-                    active: colors.neutral[600],
-                },
-                border: {
-                    default: colors.blue[500],
-                },
+		avatar: {
+			backgroun: {
+				enabled: colors.neutral[800],
+				hover: colors.neutral[700],
+				active: colors.neutral[600],
+			},
+			border: {
+				default: colors.blue[500],
+			},
 
-                label: {
-                    default: colors.blue[300],
-                    hover: colors.blue[300],
-                    active: colors.blue[300],
-                },
-                statusMark: {
-                    background: {
-                        online: colors.blue[300],
-                    },
-                    border: {
-                        calm: colors.blue[800],
-                    }
-                },
-            },
+			label: {
+				default: colors.blue[300],
+				hover: colors.blue[300],
+				active: colors.blue[300],
+			},
+			statusMark: {
+				background: {
+					online: colors.blue[300],
+				},
+				border: {
+					calm: colors.blue[800],
+				}
+			},
+		},
+
+		button: {
+			primary: {
+				background: {
+					enabled: colors.blue[500],
+					hover: colors.blue[600],
+					active: colors.blue[700],
+					disabled: colors.neutral[100],
+				},
+
+				label: {
+					enabled: colors.neutral[50],
+					disabled: colors.neutral[300],
+				},
+
+				border: {
+					focus: colors.blue[200],
+					disabled: colors.neutral[300],
+				},
+
+				icon: {
+					enabled: colors.neutral[50],
+					disabled: colors.neutral[300],
+				},
+			},
+
+			outline: {
+				background: {
+					hover: colors.neutral[600],
+					active: colors.neutral[700],
+				},
+				label: {
+					enabled: colors.neutral[50],
+					disabled: colors.neutral[300],
+				},
+				border: {
+					enabled: colors.neutral[400],
+					focus: colors.blue[200],
+					disabled: colors.neutral[100],
+				},
+				icon: {
+					enabled: colors.neutral[200],
+					disabled: colors.neutral[400],
+				},
+			},
+
+			flat: {
+				background: {
+					hover: colors.neutral[500],
+					active: colors.neutral[700],
+				},
+				label: {
+					enabled: colors.neutral[50],
+					disabled: colors.neutral[300],
+				},
+				border: {
+					focus: colors.blue[200],
+				},
+				icon: {
+					enabled: colors.neutral[200],
+					disabled: colors.neutral[400],
+				},
+			},
+
+			icon: {
+				primary: {
+					background: {
+						enabled: colors.blue[500],
+						hover: colors.blue[600],
+						active: colors.blue[700],
+					},
+					border: {
+						focus: colors.blue[200],
+					},
+					icon: {
+						enabled: colors.neutral[50],
+						disabled: colors.neutral[400],
+					},
+				},
+				secondary: {
+					background: {
+						hover: colors.neutral[600],
+						active: colors.neutral[700],
+					},
+					border: {
+						focus: colors.blue[200],
+					},
+					icon: {
+						enabled: colors.neutral[200],
+						disabled: colors.neutral[400],
+					},
+				},
+			},
+
+		},
+
+
+
+		linkButton: {
+
+			primary: {
+				label: {
+					enabled: colors.blue[300],
+					hover: colors.blue[400],
+					active: colors.blue[500],
+					focus: colors.blue[300],
+					disabled: colors.neutral[300],
+				},
+				icon: {
+					enabled: colors.blue[300],
+					hover: colors.blue[400],
+					active: colors.blue[500],
+					focus: colors.blue[300],
+					disabled: colors.neutral[300],
+				},
+			},
+
+			secondary: {
+				label: {
+					enabled: colors.neutral[100],
+					hover: colors.neutral[200],
+					active: colors.neutral[300],
+					focus: colors.neutral[100],
+					disabled: colors.neutral[300],
+				},
+				icon: {
+					enabled: colors.neutral[100],
+					hover: colors.neutral[200],
+					active: colors.neutral[300],
+					focus: colors.neutral[100],
+					disabled: colors.neutral[300],
+				},
+			},
+		},
+
+		toggleButton: {
+			primary: {
+				background: {
+					enabled: colors.neutral[800],
+					hover: colors.neutral[700],
+					active: colors.neutral[600],
+					disabled: colors.neutral[800],
+				},
+				border: {
+					enabled: colors.neutral[400],
+					disabled: colors.neutral[500],
+				},
+				label: {
+					enabled: colors.neutral[100],
+					disabled: colors.neutral[300],
+				},
+				icon: {
+					disabled: colors.neutral[300],
+				},
+			},
+			secondary: {
+				background: {
+					enabled: colors.neutral[800],
+					hover: colors.neutral[700],
+					active: colors.neutral[600],
+					disabled: colors.neutral[800],
+				},
+				border: {
+					enabled: colors.neutral[400],
+					disabled: colors.neutral[500],
+				},
+
+				icon: {
+					enabled: colors.blue[300],
+					disabled: colors.neutral[300],
+				},
+			},
+		},
+
+		splitButton: {
+			primary: {
+				button: {
+					background: {
+						enabled: colors.blue[500],
+						hover: colors.blue[600],
+						active: colors.blue[700],
+					},
+					label: {
+						enabled: colors.neutral[50],
+						disabled: colors.neutral[300],
+					},
+					border: {
+						disabled: colors.neutral[500],
+					},
+					icon: {
+						enabled: colors.neutral[50],
+						disabled: colors.neutral[300],
+					},
+				},
+				split: {
+					background: {
+						enabled: colors.blue[500],
+						hover: colors.blue[600],
+						active: colors.blue[700],
+					},
+					label: {
+						enabled: colors.neutral[50],
+						disabled: colors.neutral[300],
+					},
+					border: {
+						disabled: colors.neutral[500],
+					},
+					icon: {
+						enabled: colors.neutral[50],
+						disabled: colors.neutral[300],
+					},
+				},
+			},
+
+
+			secondary: {
+				button: {
+					background: {
+						enabled: colors.neutral[800],
+						hover: colors.neutral[700],
+						active: colors.neutral[600],
+					},
+					label: {
+						enabled: colors.neutral[100],
+						disabled: colors.neutral[300],
+					},
+					border: {
+						enabled: colors.neutral[400],
+						disabled: colors.neutral[500],
+					},
+					icon: {
+						enabled: colors.neutral[700],
+						disabled: colors.neutral[300],
+					},
+				},
+				split: {
+					background: {
+						enabled: colors.neutral[800],
+						hover: colors.neutral[700],
+						active: colors.neutral[600],
+					},
+					label: {
+						enabled: colors.neutral[50],
+						disabled: colors.neutral[300],
+					},
+					border: {
+						enabled: colors.neutral[400],
+						disabled: colors.neutral[500],
+					},
+					icon: {
+						enabled: colors.neutral[100],
+						disabled: colors.neutral[300],
+					},
+				},
+			},
+
+		},
+
+		input: {
+			background: {
+				enabled: colors.neutral[800],
+				disabled: colors.neutral[800],
+			},
+			label: {
+				enabled: colors.neutral[300],
+				disabled: colors.neutral[400],
+				readOnly: colors.neutral[200],
+			},
+			required: {
+				enabled: colors.red[300],
+			},
+
+			border: {
+				enabled: colors.neutral[400],
+				hover: colors.blue[400],
+				focus: colors.blue[300],
+				success: colors.green[300],
+				error: colors.red[300],
+				disabled: colors.neutral[600],
+			},
+			icon: {
+				enabled: colors.neutral[300],
+			},
+			textPlaceholder: {
+				enabled: colors.neutral[400],
+				disabled: colors.neutral[400],
+			},
+			textPlaceholderValue: {
+				enabled: colors.neutral[100],
+			},
+
+			inlineMessage: {
+				default: colors.neutral[300],
+				error: colors.red[300],
+			},
+
+			cursor: {
+				enabled: colors.neutral[400],
+			},
+		},
+
+		checkbox: {
+			background: {
+				enabled: colors.neutral[700],
+				checked: colors.blue[500],
+				error: colors.red[500],
+				disabled: colors.neutral[700],
+			},
+			border: {
+				enabled: colors.blue[500],
+				error: colors.red[500],
+			},
+			controlMark: {
+				enabled: colors.neutral[50],
+				disabled: colors.neutral[400],
+			},
+		},
+
+		radioButton: {
+			background: {
+				enabled: colors.neutral[700],
+				checked: colors.blue[500],
+				error: colors.red[500],
+				disabled: colors.neutral[700],
+			},
+			border: {
+				enabled: colors.blue[500],
+				error: colors.red[500],
+			},
+			controlMark: {
+				enabled: colors.neutral[50],
+				disabled: colors.neutral[400],
+			},
+		},
+
 
 		link: {
 			bakcground: {
