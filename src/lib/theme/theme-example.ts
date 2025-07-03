@@ -274,6 +274,31 @@ export const lightTheme = {
 
 	},
 
+	 avatar: {
+                backgroun: {
+                    enabled: colors.white,
+                    hover: colors.neutral[25],
+                    active: colors.neutral[50],
+                },
+                border: {
+                    default: colors.neutral[200],
+                },
+
+                label: {
+                    default: colors.neutral[700],
+                    hover: colors.neutral[700],
+                    active: colors.neutral[700],
+                },
+                statusMark: {
+                    background: {
+                        online: colors.green[300],
+                    },
+                    border: {
+                        calm: colors.white,
+                    }
+                },
+            },
+
 	link: {
 		bakcground: {
 			calm: {
@@ -347,6 +372,31 @@ export const darkTheme = {
 				loud: colors.neutral[300],
 			},
 		},
+
+		 avatar: {
+                backgroun: {
+                    enabled: colors.neutral[800],
+                    hover: colors.neutral[700],
+                    active: colors.neutral[600],
+                },
+                border: {
+                    default: colors.blue[500],
+                },
+
+                label: {
+                    default: colors.blue[300],
+                    hover: colors.blue[300],
+                    active: colors.blue[300],
+                },
+                statusMark: {
+                    background: {
+                        online: colors.blue[300],
+                    },
+                    border: {
+                        calm: colors.blue[800],
+                    }
+                },
+            },
 
 		link: {
 			bakcground: {

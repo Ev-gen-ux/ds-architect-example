@@ -53,6 +53,33 @@ declare module "styled-components" {
                 },
             },
 
+            avatar: {
+                backgroun: {
+                    enabled: string;
+                    hover: string;
+                    active: string;
+                },
+                border: {
+                    default: string;
+                },
+
+                label: {
+                    default: string;
+                    hover: string;
+                    active: string;
+                },
+                statusMark: {
+                    background: {
+                        online: string;
+                    },
+                    border: {
+                        calm: string;
+                    }
+                },
+            },
+
+            
+
             link: {
                 bakcground: {
                     calm: {
