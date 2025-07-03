@@ -16,13 +16,13 @@ declare module "styled-components" {
                     calmest: string;
                 },
                 subSection: {
-                    calm: string;
+                    calmest: string;
                 },
                 container: {
                     calmest: string;
                 },
                 benefitCard: {
-                    calm: string;
+                    calmest: string;
                 },
                 sideBar: {
                     calmest: string;
@@ -243,7 +243,7 @@ declare module "styled-components" {
                         enabled: string;
                         disabled: string;
                     },
-                
+
                     icon: {
                         disabled: string;
                     },
@@ -298,13 +298,14 @@ declare module "styled-components" {
                             enabled: string;
                             hover: string;
                             active: string;
-                            disabled: string;
+                          
                         },
                         label: {
                             enabled: string;
                             disabled: string;
                         },
                         border: {
+                            enabled: string;
                             disabled: string;
                         },
                         icon: {
@@ -449,15 +450,21 @@ declare module "styled-components" {
                     h5: string;
                     h6: string;
                 },
+
                 text: {
                     base: string;
-                    small: string;
+                    small: string
                     extraSmall: string;
                 },
+
                 component: {
                     base: string;
-                    small: string;
+                    small: string
                     extraSmall: string;
+                },
+
+                monospace: {
+                    base: string;
                 },
             },
 
@@ -482,6 +489,11 @@ declare module "styled-components" {
                     smass: string;
                     extraSmall: string;
                 },
+
+                monospace: {
+                    base: string;
+                }
+
             },
 
             fontWeight: {
