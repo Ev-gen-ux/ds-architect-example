@@ -625,9 +625,9 @@ export const darkTheme: DefaultTheme = {
             secondary: colors.neutral[200],
         },
 
-        Icon: {
+        icon: {
             base: {
-                calm: colors.neutral[50],
+                calmest: colors.neutral[50],
             },
             secondary: {
                 calm: colors.neutral[300],
