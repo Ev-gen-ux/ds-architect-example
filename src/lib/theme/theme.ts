@@ -109,36 +109,37 @@ export const lightTheme: DefaultTheme = {
     typography: {
 
         fontFamily: {
-            heading: typography.fontFamily.base,
-            text: typography.fontFamily.base,
-            component: typography.fontFamily.base,
-            monospace: typography.fontFamily.monospace
+            base: `"Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
+            heading: `"Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
+            monospace: `'SFMono-Medium', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier, monospace`,
+            component: `'SFMono-Medium', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier, monospace`,
+            text: `'SFMono-Medium', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier, monospace`,
         },
 
         fontSize: {
             heading: {
-                h1: spacers[48],
-                h2: spacers[40],
-                h3: spacers[32],
-                h4: spacers[24],
-                h5: spacers[20],
-                h6: spacers[16],
+                h1: typography.fontSize.h1,
+                h2: typography.fontSize.h2,
+                h3: typography.fontSize.h3,
+                h4: typography.fontSize.h4,
+                h5: typography.fontSize.h5,
+                h6: typography.fontSize.h6,
             },
 
             text: {
-                base: spacers[16],
-                small: spacers[14],
-                extraSmall: spacers[12],
+                base: typography.fontSize.base,
+                small: typography.fontSize.small,
+                extraSmall: typography.fontSize.extraSmall,
             },
 
             component: {
-                base: spacers[16],
-                small: spacers[14],
-                extraSmall: spacers[12],
+                base: typography.fontSize.base,
+                small: typography.fontSize.small,
+                extraSmall: typography.fontSize.extraSmall,
             },
 
             monospace: {
-                base: spacers[14],
+                base: typography.fontSize.base,
             },
 
         },
@@ -152,28 +153,28 @@ export const lightTheme: DefaultTheme = {
 
         lineHeight: {
             heading: {
-                h1: spacers[56],
-                h2: spacers[48],
-                h3: spacers[40],
-                h4: spacers[32],
-                h5: spacers[32],
-                h6: spacers[24],
+                h1: typography.lineHeight.h1,
+                h2: typography.lineHeight.h2,
+                h3: typography.lineHeight.h3,
+                h4: typography.lineHeight.h4,
+                h5: typography.lineHeight.h5,
+                h6: typography.lineHeight.h6,
             },
 
             text: {
-                base: spacers[24],
-                smass: spacers[20],
-                extraSmall: spacers[16],
+                base: typography.lineHeight.base,
+                smass: typography.lineHeight.small,
+                extraSmall: typography.lineHeight.extraSmall,
             },
 
             component: {
-                base: spacers[24],
-                smass: spacers[20],
-                extraSmall: spacers[16],
+                base: typography.lineHeight.base,
+                smass: typography.lineHeight.small,
+                extraSmall: typography.lineHeight.extraSmall,
             },
 
             monospace: {
-                base: spacers[20],
+                base: typography.lineHeight.base,
             }
 
         },

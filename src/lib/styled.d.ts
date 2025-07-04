@@ -439,6 +439,7 @@ declare module "styled-components" {
                 text: string;
                 component: string;
                 monospace: string;
+                base: string;
             },
 
             fontSize: {
