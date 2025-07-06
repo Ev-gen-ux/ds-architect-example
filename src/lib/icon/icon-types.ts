@@ -1,0 +1,1 @@
+export type iconsType = "meta" | "close" | "info" | "tag" | "ink" | "spinner";
