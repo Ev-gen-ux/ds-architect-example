@@ -3,7 +3,7 @@ import { GlobalStyle } from "./lib/theme";
 import { Placeholder } from "./lib/placeholder";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./lib/theme";
-
+import { Button } from "./lib";
 
 function App() {
 	const switcher = true;
@@ -11,7 +11,9 @@ function App() {
 		<ThemeProvider theme={switcher ? lightTheme : darkTheme}>
 			<GlobalStyle />
 			<main>
-				<Placeholder text="Привет мир!" />
+				<Button text="Button Primary" />
+				<Button appearance="outline" text="Button Outline" size="large"/>
+				<Button appearance="flat" text="Button Outline" size="medium"/>
 			</main>
 		</ThemeProvider>
 	);
