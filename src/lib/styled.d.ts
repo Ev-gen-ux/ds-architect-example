@@ -432,10 +432,6 @@ declare module "styled-components" {
 
         shadows: {
 
-            surface: {
-                focus: string,
-            },
-
             soft: {
                 medium: string,
             },
@@ -582,20 +578,22 @@ declare module "styled-components" {
         },
 
 
-    zIndex: {
-        softMedium: string;
-        surfaceElevated: string;
-        overlayContent: string;
-        overlayTooltip: string;
-        overlayDragged: string;
-        overlayModal: string;
-        overlayNotifications: string;
+        zIndex: {
+            softMedium: string;
+            surfaceElevated: string;
+            overlayContent: string;
+            overlayTooltip: string;
+            overlayDragged: string;
+            overlayModal: string;
+            overlayNotifications: string;
 
-    },
+        },
 
-  animation: {
-        base: string;
-    },
+        focus: string;
+
+        animation: {
+            base: string;
+        },
 
     }
 }
