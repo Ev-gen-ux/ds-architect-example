@@ -1,13 +1,13 @@
 import Styled from "styled-components";
-
+import { Icon, iconsType } from "../icon";
 
 interface IButtonProps {
     appearance?: "primary" | "outline" | "flat";
     size?: "large" | "medium";
     disabled?: boolean;
     loading?: boolean;
-    iconBefore?: string;
-    iconAfter?: string;
+    iconBefore?: iconsType;
+    iconAfter?: iconsType;
     text?: string;
 }
 
@@ -24,7 +24,8 @@ const StyledButton = Styled.button<IButtonProps>`
      &:focus {
     box-shadow: ${(props) => props.theme.focus};
     }
-    
+
+
  ${(props) => props.appearance === "primary" && `
     &:enabled {
     background-color: ${props.theme.colors.button.primary.background.enabled};
@@ -66,6 +67,17 @@ const StyledButton = Styled.button<IButtonProps>`
     }
     ` }
 
+    ${props => props.disabled && `
+        
+     &:disabled {
+       background-color: ${props.theme.colors.bg.global.calm};
+       color: ${props.theme.colors.button.primary.label.disabled};
+       border: ${props.theme.colors.button.primary.border.disabled};
+       cursor: not-allowed;
+      }
+
+    `}
+
   ${(props) => props.size === "medium" && `
     height: ${props.theme.spacing.height.large};
     padding: 0 ${props.theme.spacing.paddings.default};
@@ -84,6 +96,18 @@ const StyledButton = Styled.button<IButtonProps>`
 
 `;
 
-export const Button: React.FC<IButtonProps> = ({ appearance = "primary", size="medium", disabled, loading, iconBefore, iconAfter, text = "Button Label" }) => {
-    return <StyledButton appearance={appearance} size={size} disabled={disabled} loading={loading} iconBefore={iconBefore} iconAfter={iconAfter} >{text}</StyledButton>
+export const Button: React.FC<IButtonProps> = ({ appearance = "primary", size = "medium", disabled, loading, iconBefore, iconAfter, text = "Button Label" }) => {
+    return <StyledButton
+        appearance={appearance}
+        size={size}
+        disabled={disabled}
+        loading={loading}
+        iconBefore={iconBefore}
+        iconAfter={iconAfter} >
+
+        {iconBefore && <Icon size={size === "large" ? 24 : 20} iconName={iconBefore} />}
+        {text}
+        {iconAfter && <Icon size={size === "large" ? 24 : 20} iconName={iconAfter} /> }
+        
+    </StyledButton>
 }

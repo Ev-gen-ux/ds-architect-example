@@ -4,7 +4,7 @@ declare module "styled-components" {
     export interface DefaultTheme {
         colors: {
             bg: {
-
+           
                 global: {
                     calm: string;
                 },
