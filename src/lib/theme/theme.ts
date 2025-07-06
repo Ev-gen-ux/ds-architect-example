@@ -52,157 +52,8 @@ export const lightTheme: DefaultTheme = {
                 loud: colors.neutral[400],
             },
         },
-    },
 
-    spacing: {
-
-        inner: {
-            noGap: spacers[0],
-            xsClosest: spacers[1],
-            closest: spacers[2],
-            close: spacers[4],
-            related: spacers[8],
-            grouped: spacers[16],
-        },
-
-        outer: {
-            close: spacers[8],
-            related: spacers[16],
-            grouped: spacers[24],
-            subSection: spacers[48],
-            section: spacers[56],
-        },
-
-        paddings: {
-            xxsCompact: spacers[2],
-            xsCompact: spacers[6],
-            compact: spacers[8],
-            compactMedium: spacers[12],
-            default: spacers[16],
-            medium: spacers[20],
-            relaxed: spacers[24],
-            large: spacers[32],
-            section: spacers[48],
-        },
-
-
-
-        height: {
-            xSmall: spacers[4],
-            small: spacers[32],
-            base: spacers[40],
-            large: spacers[48],
-            xLarge: spacers[56],
-            xxLarge: spacers[64],
-        },
-
-        grid: {
-            columnGap: spacers[16],
-            rowGap: spacers[16],
-            columnCount: spacers[12],
-        },
-
-    },
-
-    shadows: {},
-
-    typography: {
-
-        fontFamily: {
-            base: `"Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
-            heading: `"Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
-            monospace: `'SFMono-Medium', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier, monospace`,
-            component: `'SFMono-Medium', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier, monospace`,
-            text: `'SFMono-Medium', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier, monospace`,
-        },
-
-        fontSize: {
-            heading: {
-                h1: typography.fontSize.h1,
-                h2: typography.fontSize.h2,
-                h3: typography.fontSize.h3,
-                h4: typography.fontSize.h4,
-                h5: typography.fontSize.h5,
-                h6: typography.fontSize.h6,
-            },
-
-            text: {
-                base: typography.fontSize.base,
-                small: typography.fontSize.small,
-                extraSmall: typography.fontSize.extraSmall,
-            },
-
-            component: {
-                base: typography.fontSize.base,
-                small: typography.fontSize.small,
-                extraSmall: typography.fontSize.extraSmall,
-            },
-
-            monospace: {
-                base: typography.fontSize.base,
-            },
-
-        },
-
-        fontWeight: {
-            regular: typography.fontWeight.regular,
-            medium: typography.fontWeight.medium,
-            semiBold: typography.fontWeight.semiBold,
-        },
-
-
-        lineHeight: {
-            heading: {
-                h1: typography.lineHeight.h1,
-                h2: typography.lineHeight.h2,
-                h3: typography.lineHeight.h3,
-                h4: typography.lineHeight.h4,
-                h5: typography.lineHeight.h5,
-                h6: typography.lineHeight.h6,
-            },
-
-            text: {
-                base: typography.lineHeight.base,
-                smass: typography.lineHeight.small,
-                extraSmall: typography.lineHeight.extraSmall,
-            },
-
-            component: {
-                base: typography.lineHeight.base,
-                smass: typography.lineHeight.small,
-                extraSmall: typography.lineHeight.extraSmall,
-            },
-
-            monospace: {
-                base: typography.lineHeight.base,
-            }
-
-        },
-
-    },
-
-
-    borderRadius: {
-        componentInner: spacers[4],
-        componentBase: spacers[8],
-        sectionInner: spacers[12],
-        containerBase: spacers[16],
-        sectionBase: spacers[24],
-        rounded: spacers[999],
-    },
-
-    zIndex: {
-        softMedium: zIndices.softMedium,
-        surfaceElevated: zIndices.surfaceElevated,
-        overlayContent: zIndices.overlayContent,
-        overlayTooltip: zIndices.overlayTooltip,
-        overlayDragged: zIndices.surfaceDragged,
-        overlayModal: zIndices.overlayModal,
-        overlayNotifications: zIndices.overlayNotification,
-
-    },
-
-    avatar: {
+         avatar: {
         backgroun: {
             enabled: colors.white,
             hover: colors.neutral[25],
@@ -394,7 +245,6 @@ export const lightTheme: DefaultTheme = {
             },
 
             icon: {
-                enabled: colors.neutral[700],
                 disabled: colors.neutral[300],
             },
         },
@@ -431,6 +281,7 @@ export const lightTheme: DefaultTheme = {
                     disabled: colors.neutral[300],
                 },
                 border: {
+                    enabled: colors.neutral[100],
                     disabled: colors.neutral[300],
                 },
                 icon: {
@@ -575,6 +426,157 @@ export const lightTheme: DefaultTheme = {
             },
         },
     },
+    },
+
+    spacing: {
+
+        inner: {
+            noGap: spacers[0],
+            xsClosest: spacers[1],
+            closest: spacers[2],
+            close: spacers[4],
+            related: spacers[8],
+            grouped: spacers[16],
+        },
+
+        outer: {
+            close: spacers[8],
+            related: spacers[16],
+            grouped: spacers[24],
+            subSection: spacers[48],
+            section: spacers[56],
+        },
+
+        paddings: {
+            xxsCompact: spacers[2],
+            xsCompact: spacers[6],
+            compact: spacers[8],
+            compactMedium: spacers[12],
+            default: spacers[16],
+            medium: spacers[20],
+            relaxed: spacers[24],
+            large: spacers[32],
+            section: spacers[48],
+        },
+
+
+
+        height: {
+            xSmall: spacers[4],
+            small: spacers[32],
+            base: spacers[40],
+            large: spacers[48],
+            xLarge: spacers[56],
+            xxLarge: spacers[64],
+        },
+
+        grid: {
+            columnGap: spacers[16],
+            rowGap: spacers[16],
+            columnCount: spacers[12],
+        },
+
+    },
+
+    shadows: {},
+
+    typography: {
+
+        fontFamily: {
+            base: `"Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
+            heading: `"Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
+            monospace: `'SFMono-Medium', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier, monospace`,
+            component: `'SFMono-Medium', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier, monospace`,
+            text: `'SFMono-Medium', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier, monospace`,
+        },
+
+        fontSize: {
+            heading: {
+                h1: typography.fontSize.h1,
+                h2: typography.fontSize.h2,
+                h3: typography.fontSize.h3,
+                h4: typography.fontSize.h4,
+                h5: typography.fontSize.h5,
+                h6: typography.fontSize.h6,
+            },
+
+            text: {
+                base: typography.fontSize.base,
+                small: typography.fontSize.small,
+                extraSmall: typography.fontSize.extraSmall,
+            },
+
+            component: {
+                base: typography.fontSize.base,
+                small: typography.fontSize.small,
+                extraSmall: typography.fontSize.extraSmall,
+            },
+
+            monospace: {
+                base: typography.fontSize.base,
+            },
+
+        },
+
+        fontWeight: {
+            regular: typography.fontWeight.regular,
+            medium: typography.fontWeight.medium,
+            semiBold: typography.fontWeight.semiBold,
+        },
+
+
+        lineHeight: {
+            heading: {
+                h1: typography.lineHeight.h1,
+                h2: typography.lineHeight.h2,
+                h3: typography.lineHeight.h3,
+                h4: typography.lineHeight.h4,
+                h5: typography.lineHeight.h5,
+                h6: typography.lineHeight.h6,
+            },
+
+            text: {
+                base: typography.lineHeight.base,
+                smass: typography.lineHeight.small,
+                extraSmall: typography.lineHeight.extraSmall,
+            },
+
+            component: {
+                base: typography.lineHeight.base,
+                smass: typography.lineHeight.small,
+                extraSmall: typography.lineHeight.extraSmall,
+            },
+
+            monospace: {
+                base: typography.lineHeight.base,
+            }
+
+        },
+
+    },
+
+
+    borderRadius: {
+        componentInner: spacers[4],
+        componentBase: spacers[8],
+        sectionInner: spacers[12],
+        containerBase: spacers[16],
+        sectionBase: spacers[24],
+        rounded: spacers[999],
+    },
+
+    zIndex: {
+        softMedium: zIndices.softMedium,
+        surfaceElevated: zIndices.surfaceElevated,
+        overlayContent: zIndices.overlayContent,
+        overlayTooltip: zIndices.overlayTooltip,
+        overlayDragged: zIndices.surfaceDragged,
+        overlayModal: zIndices.overlayModal,
+        overlayNotifications: zIndices.overlayNotification,
+
+    },
+
+   
 
     animation: {
         base: `0.2s ease-in-out`,
