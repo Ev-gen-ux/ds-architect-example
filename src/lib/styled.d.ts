@@ -298,7 +298,7 @@ declare module "styled-components" {
                             enabled: string;
                             hover: string;
                             active: string;
-                          
+
                         },
                         label: {
                             enabled: string;
@@ -430,7 +430,26 @@ declare module "styled-components" {
 
         },
 
+        shadows: {
 
+            surface: {
+                focus: string,
+            },
+
+            soft: {
+                medium: string,
+            },
+
+            overlay: {
+                medium: string,
+                elevated: string,
+                content: string,
+                tooltip: string,
+                drawer: string,
+                modal: string,
+                notifications: string,
+            },
+        },
 
         typography: {
 
@@ -563,7 +582,20 @@ declare module "styled-components" {
         },
 
 
+    zIndex: {
+        softMedium: string;
+        surfaceElevated: string;
+        overlayContent: string;
+        overlayTooltip: string;
+        overlayDragged: string;
+        overlayModal: string;
+        overlayNotifications: string;
 
+    },
+
+  animation: {
+        base: string;
+    },
 
     }
 }
