@@ -11,9 +11,9 @@ function App() {
 		<ThemeProvider theme={switcher ? lightTheme : darkTheme}>
 			<GlobalStyle />
 			<main>
-				<Button text="Button Primary" />
-				<Button appearance="outline" text="Button Outline" size="large"/>
-				<Button appearance="flat" text="Button Outline" size="medium"/>
+				<Button iconBefore="meta" iconAfter="meta" text="Button Primary"   />
+				<Button iconBefore="meta" iconAfter="meta" appearance="outline" text="Button Outline" size="large"/>
+				<Button iconBefore="meta" iconAfter="meta" appearance="flat" text="Button Flat" size="medium"/>
 			</main>
 		</ThemeProvider>
 	);
