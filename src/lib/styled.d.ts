@@ -194,7 +194,7 @@ declare module "styled-components" {
                     },
                 },
 
-                secondary: {
+                inverted: {
                     label: {
                         enabled: string;
                         hover: string;

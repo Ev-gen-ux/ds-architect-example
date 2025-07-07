@@ -194,19 +194,19 @@ export const lightTheme: DefaultTheme = {
                 },
             },
 
-            secondary: {
+            inverted: {
                 label: {
-                    enabled: colors.neutral[700],
-                    hover: colors.neutral[600],
-                    active: colors.neutral[500],
-                    focus: colors.neutral[700],
+                    enabled: colors.blue[300],
+                    hover: colors.blue[200],
+                    active: colors.blue[100],
+                    focus: colors.blue[300],
                     disabled: colors.neutral[300],
                 },
                 icon: {
-                    enabled: colors.neutral[700],
-                    hover: colors.neutral[600],
-                    active: colors.neutral[500],
-                    focus: colors.neutral[700],
+                    enabled: colors.blue[300],
+                    hover: colors.blue[200],
+                    active: colors.blue[100],
+                    focus: colors.blue[300],
                     disabled: colors.neutral[300],
                 },
             },
@@ -795,7 +795,7 @@ export const darkTheme: DefaultTheme = {
                 },
             },
 
-            secondary: {
+            inverted: {
                 label: {
                     enabled: colors.neutral[100],
                     hover: colors.neutral[200],
