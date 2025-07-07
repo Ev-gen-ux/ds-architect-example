@@ -18,6 +18,7 @@ function App() {
 				<ButtonLink iconBefore="meta" iconAfter="meta" appearance="inverted" text="Button Link" size="large"/>
 				<ButtonIcon icon="meta" appearance="primary" size="large"/>
 				<ButtonIcon icon="meta" appearance="secondary" size="medium"/>
+				<Card/>
 			</main>
 		</ThemeProvider>
 	);
