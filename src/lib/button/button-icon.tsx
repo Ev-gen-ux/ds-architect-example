@@ -11,6 +11,7 @@ interface IButtonIconProps {
 
 const StyledButtonIcon = styled.button<IButtonIconProps>`
 	border: 1px solid transparent;
+    border-radius:  ${(props) => props.theme.borderRadius.componentBase};
 	display: inline-flex;
 	flex-direction: row;
 	gap: ${(props) => props.theme.spacing.inner.close};
