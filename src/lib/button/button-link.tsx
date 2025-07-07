@@ -2,7 +2,7 @@ import Styled from "styled-components";
 import { Icon, iconsType } from "../icon";
 
 interface IButtonLinkProps {
-    appearance?: "primary" | "secondary";
+    appearance?: "primary" | "inverted";
     size?: "large" | "medium";
     disabled?: boolean;
     loading?: boolean;
@@ -38,15 +38,15 @@ const StyledButtonLink = Styled.button<IButtonLinkProps>`
     }
     ` }
 
-     ${(props) => props.appearance === "secondary" && `
+     ${(props) => props.appearance === "inverted" && `
     &:enabled {
-    color: ${props.theme.colors.linkButton.secondary.label.enabled};
+    color: ${props.theme.colors.linkButton.inverted.label.enabled};
     }
     &:hover {
-    color: ${props.theme.colors.linkButton.secondary.label.hover};
+    color: ${props.theme.colors.linkButton.inverted.label.hover};
     }
      &:active {
-    color: ${props.theme.colors.linkButton.secondary.label.active};
+    color: ${props.theme.colors.linkButton.inverted.label.active};
     }
     ` }
 
