@@ -16,11 +16,10 @@ const StyledButtonLink = Styled.button<IButtonLinkProps>`
     border: none;
     display: inline-flex;
     flex-direction: row;
-    border-radius: ${(props) => props.theme.borderRadius.componentBase};
     gap: ${(props) => props.theme.spacing.inner.grouped};
     justify-content: center;
     align-items: center;
-    pudding: unset;
+    pudding: 0;
     transition: ${(props) => props.theme.animation.base};
      &:focus {
     box-shadow: ${(props) => props.theme.focus};
@@ -61,14 +60,14 @@ const StyledButtonLink = Styled.button<IButtonLinkProps>`
     `}
 
   ${(props) => props.size === "medium" && `
-    height: ${props.theme.spacing.height.large};
+    
     font-size: ${props.theme.typography.fontSize.component.base};
     line-height: ${props.theme.typography.lineHeight.component.base};
     font-weight: ${props.theme.typography.fontWeight.semiBold};
     `}
 
      ${(props) => props.size === "large" && `
-    height: ${props.theme.spacing.height.xLarge};
+   
     font-size: ${props.theme.typography.fontSize.component.base};
     line-height: ${props.theme.typography.lineHeight.component.base};
     font-weight: ${props.theme.typography.fontWeight.semiBold};
