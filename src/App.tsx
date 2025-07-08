@@ -14,8 +14,8 @@ function App() {
 				<Button iconBefore="meta" iconAfter="meta" text="Button Primary"   />
 				<Button iconBefore="meta" iconAfter="meta" appearance="outline" text="Button Outline" size="large"/>
 				<Button iconBefore="meta" iconAfter="meta" appearance="flat" text="Button Flat" size="medium"/>
-				<ButtonLink iconBefore="meta" iconAfter="meta" appearance="primary" text="Button Link" size="medium"/>
-				<ButtonLink iconBefore="meta" iconAfter="meta" appearance="inverted" text="Button Link" size="large"/>
+				<ButtonLink iconBefore="link" iconAfter="link" appearance="primary" text="Button Link" size="medium"/>
+				<ButtonLink iconBefore="link" iconAfter="link" appearance="inverted" text="Button Link" size="large"/>
 				<ButtonIcon icon="meta" appearance="primary" size="large"/>
 				<ButtonIcon icon="meta" appearance="secondary" size="medium"/>
 				<Card/>
