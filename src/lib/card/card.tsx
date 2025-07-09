@@ -41,8 +41,8 @@ export const Card: React.FC<ICardProps> = ({
             textButtonPrimary={textButtonPrimary}
             textButtonOutline={textButtonOutline}
         >
-            <div className="card-footer">header</div>
-            <div className="card-body">body</div>
+            <div className="container-top">container-top</div>
+            <div className="text-container">text-container</div>
             {children}
             <Button appearance="primary" text="Оформить" iconBefore="tag" size="medium" />
             <Button appearance="outline" text="Подробнее" iconBefore="info" size="medium" />
