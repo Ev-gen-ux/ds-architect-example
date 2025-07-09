@@ -428,7 +428,7 @@ export const lightTheme: DefaultTheme = {
         },
 
         labelStatus: {
-            secindary: {
+            secondary: {
                 background: {
                     successe: colors.green[50],
                     information: colors.blue[50],
@@ -1066,7 +1066,7 @@ export const darkTheme: DefaultTheme = {
         },
 
 labelStatus: {
-            secindary: {
+            secondary: {
                 background: {
                     successe: colors.green[800],
                     information: colors.blue[800],

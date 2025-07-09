@@ -429,7 +429,7 @@ declare module "styled-components" {
             },
 
             labelStatus: {
-                secindary: {
+                secondary: {
                     background: {
                         successe: string,
                         information: string,
@@ -535,7 +535,7 @@ declare module "styled-components" {
 
                 component: {
                     base: string;
-                    smass: string;
+                    small: string;
                     extraSmall: string;
                 },
 
