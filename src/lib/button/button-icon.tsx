@@ -88,7 +88,7 @@ export const ButtonIcon: React.FC<IButtonIconProps> = ({
     disabled,
     loading,
     icon,
-}) => {
+ }) => {
     return (
         <StyledButtonIcon
             appearance={appearance}
