@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { iconsType } from "../icon";
 
-interface ILabelStatusProps {
-    appearance?: "secondary";
+
+interface ILabelProps {
     size?: "medium";
+    appearance?: "secondary";
     iconBefore?: iconsType;
-    text?: string;
+    text: string;
 }
 

@@ -1,7 +1,7 @@
 export const colors = {
 
 	neutral: {
-		25:"#F7F8F8",
+		25: "#F7F8F8",
 		50: "#EFEFF0",
 		100: "#DEE0E2",
 		200: "#BEC1C4",

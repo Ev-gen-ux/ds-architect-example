@@ -529,7 +529,7 @@ declare module "styled-components" {
 
                 text: {
                     base: string;
-                    smass: string;
+                    small: string;
                     extraSmall: string;
                 },
 
