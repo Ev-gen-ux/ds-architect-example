@@ -4,7 +4,7 @@ declare module "styled-components" {
     export interface DefaultTheme {
         colors: {
             bg: {
-           
+
                 global: {
                     calm: string;
                 },
@@ -424,6 +424,39 @@ declare module "styled-components" {
                         enabled: string;
                         hover: string;
                         active: string;
+                    },
+                },
+            },
+
+            labelStatus: {
+                secindary: {
+                    background: {
+                        successe: string,
+                        information: string,
+                        alert: string,
+                        wait: string,
+                        error: string,
+                    },
+                    border: {
+                        successe: string,
+                        information: string,
+                        alert: string,
+                        wait: string,
+                        error: string,
+                    },
+                    label: {
+                        successe: string,
+                        information: string,
+                        alert: string,
+                        wait: string,
+                        error: string,
+                    },
+                    icon: {
+                        successe: string,
+                        information: string,
+                        alert: string,
+                        wait: string,
+                        error: string,
                     },
                 },
             },

@@ -426,7 +426,43 @@ export const lightTheme: DefaultTheme = {
                 },
             },
         },
+
+        labelStatus: {
+            secindary: {
+                background: {
+                    successe: colors.green[50],
+                    information: colors.blue[50],
+                    alert: colors.yellow[50],
+                    wait: colors.neutral[50],
+                    error: colors.red[50],
+                },
+                border: {
+                    successe: colors.green[500],
+                    information: colors.blue[500],
+                    alert: colors.yellow[500],
+                    wait: colors.neutral[500],
+                    error: colors.red[500],
+                },
+                label: {
+                    successe: colors.green[500],
+                    information: colors.blue[500],
+                    alert: colors.yellow[500],
+                    wait: colors.neutral[500],
+                    error: colors.red[500],
+                },
+                icon: {
+                    successe: colors.green[500],
+                    information: colors.blue[500],
+                    alert: colors.yellow[500],
+                    wait: colors.neutral[500],
+                    error: colors.red[500],
+                },
+            },
+        },
+
     },
+
+
 
     spacing: {
 
@@ -479,21 +515,21 @@ export const lightTheme: DefaultTheme = {
     },
 
     shadows: {
-       
-    soft: {
-        medium: `0px 4px 16px rgba(18, 20, 22, 0.08)`,
-    },
 
-    overlay: {
-        medium: `0px 4px 16px rgba(18, 20, 22, 0.25)`,
-        elevated: `0px 2px 6px rgba(18, 20, 22, 0.12)`,
-        content: ` 0px 2px 4px rgba(18, 20, 22, 0.16)`,
-        tooltip: ` 0px 2px 8px rgba(18, 20, 22, 0.12)`,
-        drawer: `0px 4px 16px rgba(18, 20, 22, 0.25)`,
-        modal: `0px 2px 24px rgba(18, 20, 22, 0.16)`,
-        notifications:`0px 2px 24px rgba(18, 20, 22, 0.2)`,
+        soft: {
+            medium: `0px 4px 16px rgba(18, 20, 22, 0.08)`,
+        },
+
+        overlay: {
+            medium: `0px 4px 16px rgba(18, 20, 22, 0.25)`,
+            elevated: `0px 2px 6px rgba(18, 20, 22, 0.12)`,
+            content: ` 0px 2px 4px rgba(18, 20, 22, 0.16)`,
+            tooltip: ` 0px 2px 8px rgba(18, 20, 22, 0.12)`,
+            drawer: `0px 4px 16px rgba(18, 20, 22, 0.25)`,
+            modal: `0px 2px 24px rgba(18, 20, 22, 0.16)`,
+            notifications: `0px 2px 24px rgba(18, 20, 22, 0.2)`,
+        },
     },
-},
 
     typography: {
 
@@ -591,9 +627,9 @@ export const lightTheme: DefaultTheme = {
 
     },
 
-   
+
     focus: `0px 0px 0px 2px rgba(157, 195, 234, 1)`,
-     
+
 
     animation: {
         base: `0.2s ease-in-out`,
@@ -1028,6 +1064,40 @@ export const darkTheme: DefaultTheme = {
                 },
             },
         },
+
+labelStatus: {
+            secindary: {
+                background: {
+                    successe: colors.green[800],
+                    information: colors.blue[800],
+                    alert: colors.yellow[800],
+                    wait: colors.neutral[800],
+                    error: colors.red[800],
+                },
+                border: {
+                    successe: colors.green[500],
+                    information: colors.blue[500],
+                    alert: colors.yellow[500],
+                    wait: colors.neutral[500],
+                    error: colors.red[500],
+                },
+                label: {
+                    successe: colors.green[50],
+                    information: colors.blue[50],
+                    alert: colors.yellow[50],
+                    wait: colors.neutral[50],
+                    error: colors.red[50],
+                },
+                icon: {
+                    successe: colors.neutral[200],
+                    information: colors.neutral[200],
+                    alert: colors.neutral[200],
+                    wait: colors.neutral[200],
+                    error: colors.neutral[200],
+                },
+            },
+        },
+
     },
 
 };
