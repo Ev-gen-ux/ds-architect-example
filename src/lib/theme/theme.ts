@@ -588,7 +588,7 @@ export const lightTheme: DefaultTheme = {
 
             text: {
                 base: typography.lineHeight.base,
-                smass: typography.lineHeight.small,
+                small: typography.lineHeight.small,
                 extraSmall: typography.lineHeight.extraSmall,
             },
 

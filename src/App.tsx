@@ -19,6 +19,7 @@ function App() {
 				<ButtonIcon icon="meta" appearance="primary" size="large"/>
 				<ButtonIcon icon="meta" appearance="secondary" size="medium"/>
 				<Card/>
+
 			</main>
 		</ThemeProvider>
 	);
