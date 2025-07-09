@@ -81,6 +81,7 @@ const StyledButton = Styled.button<IButtonProps>`
   ${(props) => props.size === "medium" && `
     height: ${props.theme.spacing.height.large};
     padding: 0 ${props.theme.spacing.paddings.default};
+    gap: ${props.theme.spacing.inner.related};
     font-size: ${props.theme.typography.fontSize.component.base};
     line-height: ${props.theme.typography.lineHeight.component.base};
     font-weight: ${props.theme.typography.fontWeight.semiBold};
