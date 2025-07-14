@@ -11,7 +11,7 @@ function App() {
 		<ThemeProvider theme={switcher ? lightTheme : darkTheme}>
 			<GlobalStyle />
 			<main>
-				<Card />
+				<Card iconBefore="tag" />
 			</main>
 		</ThemeProvider>
 	);
