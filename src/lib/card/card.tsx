@@ -12,9 +12,7 @@ interface ICardProps {
     children?: React.ReactNode;
     textButtonPrimary?: string;
     textButtonOutline?: string;
-    iconBefore?:
-    | "tag"
-    ;
+    iconBefore?: "tag";
 }
 
 const StyledCard = styled.div<ICardProps>`
@@ -23,12 +21,19 @@ const StyledCard = styled.div<ICardProps>`
    flex-direction: column;
    gap: ${props => props.theme.spacing.paddings.relaxed};
    min-width: 352px;
-   min-width: 1304px;
+   max-width: 1304px;
    border: 1px solid;
    border-color: ${props => props.theme.colors.border.subSection.calm};
    border-radius: ${props => props.theme.borderRadius.sectionInner};
    box-shadow: ${props => props.theme.shadows.overlay.elevated};
    display: relative;
+
+.container-top {
+ color: ${props => props.theme.colors.icon.secondary.calm};
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+};
 
 
 .text-container {
@@ -84,11 +89,19 @@ export const Card: React.FC<ICardProps> = ({
         >
 
             <div className="container-top">
+
+                {iconBefore && (
+                    <Icon
+                        iconName={iconBefore}
+                        size={32}
+                    />
+                )}
                 <Label
-                    text="Label Text"
+                    text="Label"
                     size="medium"
                     appearance={"secondary"}
                 />
+
             </div>
 
 
