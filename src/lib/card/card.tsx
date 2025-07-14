@@ -26,7 +26,8 @@ const StyledCard = styled.div<ICardProps>`
    border-color: ${props => props.theme.colors.border.subSection.calm};
    border-radius: ${props => props.theme.borderRadius.sectionInner};
    box-shadow: ${props => props.theme.shadows.overlay.elevated};
-   display: relative;
+   backgroun-color: ${props => props.theme.colors.bg.sideBar.calmest};
+ 
 
 .container-top {
  color: ${props => props.theme.colors.icon.secondary.calm};
