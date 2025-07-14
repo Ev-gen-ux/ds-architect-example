@@ -3,7 +3,7 @@ import { GlobalStyle } from "./lib/theme";
 import { Placeholder } from "./lib/placeholder";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./lib/theme";
-import { Button, ButtonLink, ButtonIcon, Card, Label } from "./lib";
+import { Card } from "./lib";
 
 function App() {
 	const switcher = true;
@@ -11,15 +11,7 @@ function App() {
 		<ThemeProvider theme={switcher ? lightTheme : darkTheme}>
 			<GlobalStyle />
 			<main>
-				<Button iconBefore="meta" iconAfter="meta" text="Button Primary"   />
-				<Button iconBefore="meta" iconAfter="meta" appearance="outline" text="Button Outline" size="large"/>
-				<Button iconBefore="meta" iconAfter="meta" appearance="flat" text="Button Flat" size="medium"/>
-				<ButtonLink iconBefore="link" iconAfter="link" appearance="primary" text="Button Link" size="medium"/>
-				<ButtonLink iconBefore="link" iconAfter="link" appearance="inverted" text="Button Link" size="large"/>
-				<ButtonIcon icon="meta" appearance="primary" size="large"/>
-				<ButtonIcon icon="meta" appearance="secondary" size="medium"/>
-				<Card/>
-				<Label/>
+				<Card />
 			</main>
 		</ThemeProvider>
 	);

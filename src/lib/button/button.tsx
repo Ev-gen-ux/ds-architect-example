@@ -12,7 +12,7 @@ interface IButtonProps {
 }
 
 const StyledButton = Styled.button<IButtonProps>`
-    border: 1px solid;
+    
     display: inline-flex;
     flex-direction: row;
     border-radius: ${(props) => props.theme.borderRadius.componentBase};
@@ -28,6 +28,7 @@ const StyledButton = Styled.button<IButtonProps>`
 
  ${(props) => props.appearance === "primary" && `
     &:enabled {
+    border: none;
     background-color: ${props.theme.colors.button.primary.background.enabled};
     color: ${props.theme.colors.button.primary.label.enabled};
     }
@@ -48,7 +49,7 @@ const StyledButton = Styled.button<IButtonProps>`
     &:hover {
     background-color: ${props.theme.colors.button.outline.background.hover};
     }
-     &:active {
+    &:active {
     background-color: ${props.theme.colors.button.outline.background.active};
     }
     ` }

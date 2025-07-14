@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { iconsType } from "../icon";
 import { Button } from "../button";
+import { label } from "../label";
+
 
 interface ICardProps {
-    appearance?: "base" | "inverted";
-    contentBefore?: React.ReactNode;
+    appearance?: "primary" | "secondary";
     iconBefore?: iconsType;
-    badgeText?: string;
-    contentAfter?: React.ReactNode;
+    label?: string;
     textHeadind?: string;
     textDiscription?: string;
     children?: React.ReactNode;
@@ -15,14 +15,19 @@ interface ICardProps {
     textButtonOutline?: string;
 }
 
-const StyledCard = styled.div<ICardProps>``;
+const StyledCard = styled.div<ICardProps>`
+   padding: ${props => props.theme.spacing.paddings.relaxed}
+   gap: ${props => props.theme.spacing.inner.grouped}
+
+
+
+
+`;
 
 export const Card: React.FC<ICardProps> = ({
     appearance,
-    contentBefore,
     iconBefore,
-    badgeText,
-    contentAfter,
+    label,
     textHeadind,
     textDiscription,
     children,
@@ -32,20 +37,20 @@ export const Card: React.FC<ICardProps> = ({
     return (
         <StyledCard
             appearance={appearance}
-            contentBefore={contentBefore}
             iconBefore={iconBefore}
-            badgeText={badgeText}
-            contentAfter={contentAfter}
+            label={label}
             textHeadind={textHeadind}
             textDiscription={textDiscription}
             textButtonPrimary={textButtonPrimary}
             textButtonOutline={textButtonOutline}
         >
-            <div className="container-top">container-top</div>
-            <div className="text-container">text-container</div>
-            {children}
-            <Button appearance="primary" text="Оформить" iconBefore="tag" size="medium" />
-            <Button appearance="outline" text="Подробнее" iconBefore="info" size="medium" />
+           
+                <div className="container-top">container-top</div>
+                <div className="text-container">text-container</div>
+                {children}
+                <Button appearance="primary" text="Button Label" iconBefore="tag" size="medium" />
+                <Button appearance="outline" text="Button Label" iconBefore="info" size="medium" />
+           
         </StyledCard>
     );
 };
