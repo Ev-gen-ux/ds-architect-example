@@ -24,7 +24,8 @@ const StyledLabel = styled.div<ILabelProps>`
         line-height: ${props.theme.typography.lineHeight.component.small};
         font-weight: ${props.theme.typography.fontWeight.regular};
        
-        padding: 0 ${props.theme.spacing.paddings.xsCompact};
+        padding: ${props.theme.spacing.paddings.xsCompact};
+
         `}
 
 
