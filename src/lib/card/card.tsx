@@ -7,7 +7,7 @@ import { Label } from "../label";
 interface ICardProps {
     appearance?: "primary" | "secondary";
     labelText?: string;
-    textHeadind?: string;
+    textHeadindg?: string;
     textDiscription?: string;
     children?: React.ReactNode;
     textButtonPrimary?: string;
@@ -70,19 +70,19 @@ gap: ${props => props.theme.spacing.inner.close};
 export const Card: React.FC<ICardProps> = ({
     appearance,
     iconBefore,
-    labelText,
-    textHeadind,
-    textDiscription,
+    labelText = "Status Label",
+    textHeadindg = "Card Heading",
+    textDiscription = "Card Discription",
     children,
-    textButtonPrimary,
-    textButtonOutline,
+    textButtonPrimary ="Add to cart",
+    textButtonOutline ="More details",
 }) => {
     return (
         <StyledCard
             appearance={appearance}
             iconBefore={iconBefore}
             labelText={labelText}
-            textHeadind={textHeadind}
+            textHeadindg={textHeadindg}
             textDiscription={textDiscription}
             textButtonPrimary={textButtonPrimary}
             textButtonOutline={textButtonOutline}
@@ -97,7 +97,7 @@ export const Card: React.FC<ICardProps> = ({
                     />
                 )}
                 <Label
-                    text="Label"
+                    text={labelText}
                     size="medium"
                     appearance={"secondary"}
                 />
@@ -108,10 +108,10 @@ export const Card: React.FC<ICardProps> = ({
 
             <div className="text-container">
                 <p className="card-heading">
-                    Card Heading
+                    {textHeadindg}
                 </p>
                 <span className="card-discription">
-                    Card Discriptipn
+                    {textDiscription}
                 </span>
             </div>
 
@@ -119,8 +119,8 @@ export const Card: React.FC<ICardProps> = ({
             {children}
 
             <div className="button-container">
-                <Button appearance="primary" text="Button Label" iconBefore="tag" size="medium" />
-                <Button appearance="outline" text="Button Label" iconBefore="info" size="medium" />
+                <Button appearance="primary" text={textButtonPrimary} iconBefore="tag" size="medium" />
+                <Button appearance="outline" text={textButtonOutline} iconBefore="info" size="medium" />
 
             </div>
 
