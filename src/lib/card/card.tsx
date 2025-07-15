@@ -107,7 +107,7 @@ export const Card: React.FC<ICardProps> = ({
                 <Label
                     text={labelText}
                     size="medium"
-                    appearance="successe"
+                    appearance="error"
                     
                 />
 
