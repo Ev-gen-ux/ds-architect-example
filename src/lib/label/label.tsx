@@ -34,11 +34,11 @@ const StyledLabel = styled.div<ILabelProps>`
 		`
             background: ${props.theme.colors.labelStatus.secondary.background.wait};
             color: ${props.theme.colors.labelStatus.secondary.label.wait};
-            border-color: ${
-				props.theme.colors.labelStatus.secondary.border.wait
-			};
+            border-color: ${props.theme.colors.labelStatus.secondary.border.wait
+		};
             `}
 
+	
 
       
 `;
@@ -46,11 +46,11 @@ const StyledLabel = styled.div<ILabelProps>`
 export const Label: React.FC<ILabelProps> = ({
 	text = "Label",
 	size = "medium",
-	appearance = "secondary",
+	appearance = "primary",
 }) => {
 	return (
 		<StyledLabel
-			appearance={appearance}
+			appearance = "secondary"
 			size={size}
 			text={text}
 		>

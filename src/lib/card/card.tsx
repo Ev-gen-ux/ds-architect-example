@@ -26,7 +26,7 @@ const StyledCard = styled.div<ICardProps>`
    border-color: ${props => props.theme.colors.border.subSection.calm};
    border-radius: ${props => props.theme.borderRadius.sectionInner};
    box-shadow: ${props => props.theme.shadows.overlay.elevated};
-   backgroun-color: ${props => props.theme.colors.bg.sideBar.calmest};
+   backgroun-color: ${props => props.theme.colors.bg.section.calmest};
  
 
 .container-top {
@@ -64,6 +64,13 @@ gap: ${props => props.theme.spacing.inner.close};
     gap: ${props => props.theme.spacing.inner.related};
  };
 
+${props => props.appearance && `
+    background: ${props.theme.colors.bg.section.calm};
+    
+    
+    
+    `}
+
 `;
 
 
@@ -100,7 +107,7 @@ export const Card: React.FC<ICardProps> = ({
                 <Label
                     text={labelText}
                     size="medium"
-                    appearance={"secondary"}
+                    
                 />
 
             </div>
@@ -120,8 +127,8 @@ export const Card: React.FC<ICardProps> = ({
             {children}
 
             <div className="button-container">
-                <Button appearance="primary" text={textButtonPrimary} iconBefore="tag" size="medium" />
-                <Button appearance="outline" text={textButtonOutline} iconBefore="info" size="medium" />
+                <Button appearance={appearance ? "outline" : "primary"} text={textButtonPrimary} iconBefore="tag" size="medium" />
+                <Button appearance={appearance ? "flat" : "outline"} text={textButtonOutline} iconBefore="info" size="medium" />
 
             </div>
 
