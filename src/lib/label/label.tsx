@@ -5,7 +5,7 @@ import { iconsType } from "../icon";
 interface ILabelProps {
 	text: string;
 	size?: "medium";
-	appearance?: "secondary";
+	appearance?:"successe" | "information" | "alert" | "wait" | "error" ;
 }
 
 const StyledLabel = styled.div<ILabelProps>`
@@ -32,9 +32,9 @@ const StyledLabel = styled.div<ILabelProps>`
         ${(props) =>
 		props.appearance &&
 		`
-            background: ${props.theme.colors.labelStatus.secondary.background.wait};
-            color: ${props.theme.colors.labelStatus.secondary.label.wait};
-            border-color: ${props.theme.colors.labelStatus.secondary.border.wait
+            background: ${props.theme.colors.label.wait.background.wait};
+            color: ${props.theme.colors.label.wait.label.wait};
+            border-color: ${props.theme.colors.label.wait.border.wait
 		};
             `}
 
@@ -46,11 +46,11 @@ const StyledLabel = styled.div<ILabelProps>`
 export const Label: React.FC<ILabelProps> = ({
 	text = "Label",
 	size = "medium",
-	appearance = "primary",
+	appearance = "wait",
 }) => {
 	return (
 		<StyledLabel
-			appearance = "secondary"
+			appearance={appearance}
 			size={size}
 			text={text}
 		>

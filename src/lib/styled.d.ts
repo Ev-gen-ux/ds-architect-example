@@ -428,40 +428,90 @@ declare module "styled-components" {
                 },
             },
 
-            labelStatus: {
-                secondary: {
+            label: {
+
+                successe: {
                     background: {
                         successe: string,
-                        information: string,
-                        alert: string,
-                        wait: string,
-                        error: string,
                     },
                     border: {
                         successe: string,
-                        information: string,
-                        alert: string,
-                        wait: string,
-                        error: string,
                     },
                     label: {
                         successe: string,
-                        information: string,
-                        alert: string,
-                        wait: string,
-                        error: string,
                     },
                     icon: {
                         successe: string,
+                    },
+                },
+
+                information: {
+                    background: {
                         information: string,
+                    },
+                    border: {
+                        information: string,
+                    },
+                    label: {
+                        information: string,
+                    },
+                    icon: {
+                        information: string,
+                    },
+                },
+
+                alert: {
+                    background: {
                         alert: string,
+                    },
+                    border: {
+                        alert: string,
+                    },
+                    label: {
+                        alert: string,
+
+                    },
+
+                    icon: {
+                        alert: string,
+                    },
+
+                },
+
+                wait: {
+                    background: {
                         wait: string,
+                    },
+                    border: {
+                        wait: string,
+                    },
+                    label: {
+                        wait: string,
+                    },
+                    icon: {
+                        wait: string,
+                    },
+
+
+                },
+
+                error: {
+                    background: {
+                        error: string,
+                    },
+                    border: {
+                        error: string,
+                    },
+                    label: {
+                        error: string,
+                    },
+                    icon: {
                         error: string,
                     },
                 },
-            },
 
-        },
+            },
+        }
 
         shadows: {
 
@@ -627,6 +677,6 @@ declare module "styled-components" {
         animation: {
             base: string;
         },
-
     }
+
 }

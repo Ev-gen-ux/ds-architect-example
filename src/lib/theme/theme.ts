@@ -427,37 +427,88 @@ export const lightTheme: DefaultTheme = {
             },
         },
 
-        labelStatus: {
-            secondary: {
+        label: {
+
+            successe: {
                 background: {
                     successe: colors.green[50],
-                    information: colors.blue[50],
-                    alert: colors.yellow[50],
-                    wait: colors.neutral[50],
-                    error: colors.red[50],
                 },
                 border: {
                     successe: colors.green[500],
-                    information: colors.blue[500],
-                    alert: colors.yellow[500],
-                    wait: colors.neutral[500],
-                    error: colors.red[500],
                 },
                 label: {
                     successe: colors.green[500],
-                    information: colors.blue[500],
-                    alert: colors.yellow[500],
-                    wait: colors.neutral[500],
-                    error: colors.red[500],
                 },
                 icon: {
                     successe: colors.green[500],
+                },
+            },
+
+            information: {
+                background: {
+                    information: colors.blue[50],
+                },
+                border: {
                     information: colors.blue[500],
+                },
+                label: {
+                    information: colors.blue[500],
+                },
+                icon: {
+                    information: colors.blue[500],
+                },
+            },
+
+            alert: {
+                background: {
+                    alert: colors.yellow[50],
+                },
+                border: {
                     alert: colors.yellow[500],
+                },
+                label: {
+                    alert: colors.yellow[500],
+
+                },
+
+                icon: {
+                    alert: colors.yellow[500],
+                },
+
+            },
+
+            wait: {
+                background: {
+                    wait: colors.neutral[50],
+                },
+                border: {
                     wait: colors.neutral[500],
+                },
+                label: {
+                    wait: colors.neutral[500],
+                },
+                icon: {
+                    wait: colors.neutral[500],
+                },
+
+
+            },
+
+            error: {
+                background: {
+                    error: colors.red[50],
+                },
+                border: {
+                    error: colors.red[500],
+                },
+                label: {
+                    error: colors.red[500],
+                },
+                icon: {
                     error: colors.red[500],
                 },
             },
+
         },
 
     },
@@ -1065,37 +1116,88 @@ export const darkTheme: DefaultTheme = {
             },
         },
 
-labelStatus: {
-            secondary: {
+        label: {
+
+            successe: {
                 background: {
                     successe: colors.green[800],
-                    information: colors.blue[800],
-                    alert: colors.yellow[800],
-                    wait: colors.neutral[800],
-                    error: colors.red[800],
                 },
                 border: {
                     successe: colors.green[500],
-                    information: colors.blue[500],
-                    alert: colors.yellow[500],
-                    wait: colors.neutral[500],
-                    error: colors.red[500],
                 },
                 label: {
-                    successe: colors.green[50],
-                    information: colors.blue[50],
-                    alert: colors.yellow[50],
-                    wait: colors.neutral[50],
-                    error: colors.red[50],
+                    successe: colors.neutral[50],
                 },
                 icon: {
                     successe: colors.neutral[200],
+                },
+            },
+
+            information: {
+                background: {
+                    information: colors.blue[800],
+                },
+                border: {
+                    information: colors.blue[500],
+                },
+                label: {
+                    information: colors.neutral[50],
+                },
+                icon: {
                     information: colors.neutral[200],
+                },
+            },
+
+            alert: {
+                background: {
+                    alert: colors.yellow[800],
+                },
+                border: {
+                    alert: colors.yellow[500],
+                },
+                label: {
+                    alert: colors.neutral[50],
+
+                },
+
+                icon: {
                     alert: colors.neutral[200],
+                },
+
+            },
+
+            wait: {
+                background: {
+                    wait: colors.neutral[800],
+                },
+                border: {
+                    wait: colors.neutral[500],
+                },
+                label: {
+                    wait: colors.neutral[50],
+                },
+                icon: {
                     wait: colors.neutral[200],
+                },
+
+
+            },
+
+            error: {
+                background: {
+                    error: colors.red[800],
+                },
+                border: {
+                    error: colors.red[500],
+                },
+                label: {
+                    error: colors.neutral[50],
+                },
+                icon: {
                     error: colors.neutral[200],
                 },
             },
+
         },
 
     },
