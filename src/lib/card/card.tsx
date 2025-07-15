@@ -5,13 +5,37 @@ import { Label } from "../label";
 
 
 interface ICardProps {
+    /**
+     * Визуальный вес компонента.
+     */
     appearance?: "primary" | "secondary";
+    /**
+     * Текст в лейбле.
+     */
     labelText?: string;
+    /**
+     * Наполнение заголовка.
+     */
     textHeadindg?: string;
+    /**
+     * Наполнение описания.
+     */
     textDiscription?: string;
+    /**
+     * React.ReactNode
+     */
     children?: React.ReactNode;
+    /**
+     * Текст в основной кнопке.
+     */
     textButtonPrimary?: string;
+     /**
+     * Текст во вторичной кнопке.
+     */
     textButtonOutline?: string;
+    /**
+     * Отображает икнку лева.
+     */
     iconBefore?: "tag";
 }
 
@@ -75,7 +99,9 @@ ${props => props.appearance === "primary" && `
 `;
 
 
-
+/**
+ * Универсальный компонент, позволяет отображать линейку продуктов.
+ */
 export const Card: React.FC<ICardProps> = ({
     appearance,
     iconBefore,

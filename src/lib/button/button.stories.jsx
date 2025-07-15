@@ -10,8 +10,9 @@ export default {
             // 'beta' | 'stable' | 'deprecated' | 'releaseCandidate'
             type: "stable"
         },
-        tags: ['autodocs']
-    }
+       
+    },
+     tags: ['autodocs']
 }
 
 export const Primary = {
