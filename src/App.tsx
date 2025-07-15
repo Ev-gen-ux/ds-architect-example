@@ -3,7 +3,7 @@ import { GlobalStyle } from "./lib/theme";
 import { Placeholder } from "./lib/placeholder";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./lib/theme";
-import { Card } from "./lib";
+import { Card, Label } from "./lib";
 import { truncate } from "fs";
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
 					textButtonOutline="More details"
 		
 				/>
+				
 			</main>
 		</ThemeProvider>
 	);
