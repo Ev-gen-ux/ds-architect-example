@@ -2,12 +2,31 @@ import Styled from "styled-components";
 import { Icon, iconsType } from "../icon";
 
 interface IButtonProps {
+  /**
+   * Визуальный вес компонента
+   */
     appearance?: "primary" | "outline" | "flat";
+    /**
+     * Размер компонента
+     */
     size?: "large" | "medium";
+    /**
+     * Заблокированное состоние
+     */
     disabled?: boolean;
+    /**
+     * состояние загрузки
+     */
     loading?: boolean;
+    /**Включает иконку слева */
     iconBefore?: iconsType;
+    /**
+     * Включает иконку справа
+     */
     iconAfter?: iconsType;
+    /**
+     * Текст в кнопке
+     */
     text?: string;
 }
 
@@ -97,7 +116,9 @@ const StyledButton = Styled.button<IButtonProps>`
     `}
 
 `;
-
+/**
+ * Самая заметная кнопка для ключевого действия на экране. 
+ */
 export const Button: React.FC<IButtonProps> = ({ appearance = "primary", size = "medium", disabled, loading, iconBefore, iconAfter, text = "Button Label" }) => {
     return <StyledButton
         appearance={appearance}

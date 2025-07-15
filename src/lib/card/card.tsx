@@ -64,12 +64,13 @@ gap: ${props => props.theme.spacing.inner.close};
     gap: ${props => props.theme.spacing.inner.related};
  };
 
-${props => props.appearance && `
+${props => props.appearance === "primary" && `
+    background: ${props.theme.colors.bg.section.calmest};
+ `}
+
+ ${props => props.appearance === "secondary" && `
     background: ${props.theme.colors.bg.section.calm};
-    
-    
-    
-    `}
+ `}
 
 `;
 
@@ -82,8 +83,8 @@ export const Card: React.FC<ICardProps> = ({
     textHeadindg = "Card Heading",
     textDiscription = "Card Discription",
     children,
-    textButtonPrimary ="Add to cart",
-    textButtonOutline ="More details",
+    textButtonPrimary = "Add to cart",
+    textButtonOutline = "More details",
 }) => {
     return (
         <StyledCard
@@ -107,8 +108,8 @@ export const Card: React.FC<ICardProps> = ({
                 <Label
                     text={labelText}
                     size="medium"
-                    appearance="error"
-                    
+                    appearance="successe"
+
                 />
 
             </div>
@@ -128,7 +129,7 @@ export const Card: React.FC<ICardProps> = ({
             {children}
 
             <div className="button-container">
-                <Button appearance={appearance ? "outline" : "primary"} text={textButtonPrimary} iconBefore="tag" size="medium" />
+                <Button appearance={appearance ? "primary" : "outline"} text={textButtonPrimary} iconBefore="tag" size="medium" />
                 <Button appearance={appearance ? "flat" : "outline"} text={textButtonOutline} iconBefore="info" size="medium" />
 
             </div>
