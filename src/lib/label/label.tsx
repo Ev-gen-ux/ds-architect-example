@@ -6,6 +6,7 @@ interface ILabelProps {
 	text: string;
 	size?: "medium";
 	appearance?: "successe" | "information" | "alert" | "wait" | "error";
+	iconBefore?: iconsType;
 }
 
 const StyledLabel = styled.div<ILabelProps>`
@@ -28,31 +29,31 @@ const StyledLabel = styled.div<ILabelProps>`
 
         `}
 
-       ${(props) => props.appearance === "successe" &&`
+       ${(props) => props.appearance === "successe" && `
             background: ${props.theme.colors.label.successe.background.successe};
             color: ${props.theme.colors.label.successe.label.successe};
             border-color: ${props.theme.colors.label.successe.border.successe};
             `}
 
-         ${(props) => props.appearance === "information" &&`
+         ${(props) => props.appearance === "information" && `
             background: ${props.theme.colors.label.information.background.information};
             color: ${props.theme.colors.label.information.label.information};
             border-color: ${props.theme.colors.label.information.border.information};
             `}
 
-          ${(props) => props.appearance === "alert" &&`
+          ${(props) => props.appearance === "alert" && `
             background: ${props.theme.colors.label.alert.background.alert};
             color: ${props.theme.colors.label.alert.label.alert};
             border-color: ${props.theme.colors.label.alert.border.alert};
             `}
 
-        ${(props) => props.appearance === "wait" &&`
+        ${(props) => props.appearance === "wait" && `
             background: ${props.theme.colors.label.wait.background.wait};
             color: ${props.theme.colors.label.wait.label.wait};
             border-color: ${props.theme.colors.label.wait.border.wait};
             `}
 
-	      ${(props) => props.appearance === "error" &&`
+	      ${(props) => props.appearance === "error" && `
             background: ${props.theme.colors.label.error.background.error};
             color: ${props.theme.colors.label.error.label.error};
             border-color: ${props.theme.colors.label.error.border.error};
@@ -65,13 +66,16 @@ export const Label: React.FC<ILabelProps> = ({
 	text = "Label",
 	size = "medium",
 	appearance = "wait",
+	iconBefore = "tag"
 }) => {
 	return (
 		<StyledLabel
 			appearance={appearance}
 			size={size}
 			text={text}
+			iconBefore={iconBefore}
 		>
+			
 			{text}
 		</StyledLabel>
 	);
