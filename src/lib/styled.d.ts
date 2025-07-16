@@ -531,6 +531,14 @@ declare module "styled-components" {
 
             },
 
+            inputLabel: {
+                required: {
+                    enabled: string;
+                },
+                enabled: string;
+                disabled: string;
+                readOnly: string;
+            },
         },
 
         shadows: {

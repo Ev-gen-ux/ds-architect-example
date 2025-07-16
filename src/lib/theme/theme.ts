@@ -526,7 +526,17 @@ export const lightTheme: DefaultTheme = {
                 error: colors.red[400],
             },
         },
+
+        inputLabel: {
+            required: {
+                enabled: colors.red[500],
+            },
+            enabled: colors.neutral[700],
+            disabled: colors.neutral[300],
+            readOnly: colors.neutral[400],
+        },
     },
+
 
 
 
@@ -1231,6 +1241,16 @@ export const darkTheme: DefaultTheme = {
                 error: colors.red[300],
             },
         },
+
+        inputLabel: {
+              required: {
+                enabled: colors.red[500],
+            },
+            enabled: colors.neutral[300],
+            disabled: colors.neutral[400],
+            readOnly: colors.neutral[200],
+        },
+
 
     },
 
