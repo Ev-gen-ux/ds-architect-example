@@ -41,6 +41,9 @@ declare module "styled-components" {
             text: {
                 base: string;
                 secondary: string;
+                default: string;
+                successe: string;
+                error: string;
             },
 
             icon: {
@@ -517,6 +520,17 @@ declare module "styled-components" {
                     primary: string,
                 },
             },
+
+            inlineMessage: {
+                status: {
+                    default: string,
+                    successe: string,
+                    error: string,
+                },
+
+
+            },
+
         },
 
         shadows: {
