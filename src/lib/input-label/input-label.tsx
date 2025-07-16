@@ -1,8 +1,17 @@
 import styled from "styled-components";
 
 interface IInputLabel {
+	/**
+	 * Визуальный вес компонента.
+	 */
 	appearance?: "enabled" | "disabled" | "readOnly";
+	/**
+	 * Будевая операция (true/false).
+	 */
 	required?: boolean;
+	/**
+	 * Наполнение текстом.
+	 */
 	text: string;
 }
 
@@ -33,6 +42,9 @@ const StyledIInputLabel = styled.span<IInputLabel>`
 
 `;
 
+/**
+ * Компонент используется в качестве заголовка для полей ввода. 
+ */
 export const Label: React.FC<IInputLabel> = ({ required, text }) => {
 	return (
 		<StyledIInputLabel text={text} required={required}>
