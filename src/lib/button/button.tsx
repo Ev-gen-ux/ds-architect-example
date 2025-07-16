@@ -1,6 +1,7 @@
 import Styled from "styled-components";
 import { Icon, iconsType } from "../icon";
 
+
 interface IButtonProps {
   /**
    * Визуальный вес компонента.
@@ -100,6 +101,20 @@ const StyledButton = Styled.button<IButtonProps>`
 
     `}
 
+                
+    ${(props) =>
+		props.loading &&
+		`
+        color: transparent;
+        position: relative;
+        .spinner {
+        display inline-block;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        }
+        `}
+
   ${(props) => props.size === "medium" && `
     height: ${props.theme.spacing.height.large};
     padding: 0 ${props.theme.spacing.paddings.default};
@@ -129,6 +144,8 @@ export const Button: React.FC<IButtonProps> = ({ appearance = "primary", size = 
         loading={loading}
         iconBefore={iconBefore}
         iconAfter={iconAfter} >
+
+      
 
         {iconBefore && <Icon size={size === "large" ? 24 : 20} iconName={iconBefore} />}
         {text}
