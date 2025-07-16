@@ -5,8 +5,17 @@ type TSIze = "base" | "small";
 type TAppearance = "primary";
 
 interface ISpinnerProps {
+	/**
+	 * Размер компонентаю.
+	 */
 	size: TSIze;
+	/**
+	 * Визуальный вес компонента.
+	 */
 	appearance?: TAppearance;
+	/**
+	 * Наименование класса.
+	 */
 	className?: string;
 }
 
@@ -52,6 +61,9 @@ const StyledSpinner = styled.div<ISpinnerProps>`
 	}
 `;
 
+/**
+ * Спиннер — это анимированный вращающийся значок, информирующий пользователей о загрузке контента.
+ */
 export const Spinner: FC<ISpinnerProps> = ({
 	size = "base",
 	appearance = "primary",
