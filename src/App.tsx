@@ -20,7 +20,7 @@ function App() {
 					textButtonOutline="More details"
 		
 				/>
-		
+	
 			</main>
 		</ThemeProvider>
 	);

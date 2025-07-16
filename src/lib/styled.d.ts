@@ -511,7 +511,13 @@ declare module "styled-components" {
                 },
 
             },
-        }
+
+            spinner: {
+                border: {
+                    primary: string,
+                },
+            },
+        },
 
         shadows: {
 
