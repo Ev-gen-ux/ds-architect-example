@@ -510,7 +510,11 @@ export const lightTheme: DefaultTheme = {
             },
 
         },
-
+        spinner: {
+            border: {
+                primary: colors.black,
+            },
+        },
     },
 
 
@@ -689,7 +693,7 @@ export const lightTheme: DefaultTheme = {
 
 };
 
-export const darkTheme: DefaultTheme = {
+  export const darkTheme: DefaultTheme = {
     ...lightTheme,
     colors: {
         bg: {
@@ -1200,6 +1204,13 @@ export const darkTheme: DefaultTheme = {
 
         },
 
+        spinner: {
+            border: {
+                primary: colors.black,
+            },
+        },
     },
+
+  
 
 };
