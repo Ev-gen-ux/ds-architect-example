@@ -1,7 +1,13 @@
 import styled from "styled-components";
 
 interface IInlineMessage {
+    /**
+     * Цвет текста.
+     */
 	status?: "default" | "successe" | "error";
+    /**
+     * Наполнение текстом.
+     */
 	text?: string;
 }
 
@@ -30,6 +36,9 @@ const StyledInlineMessage = styled.span<IInlineMessage>`
         `}
 `;
 
+/**
+ * Информационное сообщение под полем ввода.
+ */
 export const InlineMessage: React.FC<IInlineMessage> = ({ status, text }) => {
 	return (
 		<StyledInlineMessage text={text} status={status}>
