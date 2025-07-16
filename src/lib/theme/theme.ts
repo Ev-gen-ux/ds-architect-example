@@ -41,6 +41,9 @@ export const lightTheme: DefaultTheme = {
         text: {
             base: colors.neutral[700],
             secondary: colors.neutral[400],
+            default: colors.neutral[400],
+            successe: colors.green[500],
+            error: colors.red[500],
         },
 
         icon: {
@@ -515,6 +518,14 @@ export const lightTheme: DefaultTheme = {
                 primary: colors.black,
             },
         },
+
+        inlineMessage: {
+            status: {
+                default: colors.neutral[400],
+                successe: colors.green[400],
+                error: colors.red[400],
+            },
+        },
     },
 
 
@@ -693,7 +704,7 @@ export const lightTheme: DefaultTheme = {
 
 };
 
-  export const darkTheme: DefaultTheme = {
+export const darkTheme: DefaultTheme = {
     ...lightTheme,
     colors: {
         bg: {
@@ -733,6 +744,9 @@ export const lightTheme: DefaultTheme = {
         text: {
             base: colors.neutral[50],
             secondary: colors.neutral[200],
+            default: colors.neutral[300],
+            successe: colors.green[300],
+            error: colors.red[300],
         },
 
         icon: {
@@ -1209,8 +1223,17 @@ export const lightTheme: DefaultTheme = {
                 primary: colors.black,
             },
         },
+
+        inlineMessage: {
+            status: {
+                default: colors.neutral[300],
+                successe: colors.green[300],
+                error: colors.red[300],
+            },
+        },
+
     },
 
-  
+
 
 };
