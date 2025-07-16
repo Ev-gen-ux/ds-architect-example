@@ -3,9 +3,21 @@ import { iconsType } from "../icon";
 
 
 interface ILabelProps {
+	/**
+	 * Наполнение текстом.
+	 */
 	text: string;
+	/**
+	 * Размер компонента.
+	 */
 	size?: "medium";
+	/**
+	 * Визуальный вес компонента.
+	 */
 	appearance?: "successe" | "information" | "alert" | "wait" | "error";
+	/**
+	 * Иконка слева.
+	 */
 	iconBefore?: iconsType;
 }
 
@@ -61,7 +73,9 @@ const StyledLabel = styled.div<ILabelProps>`
 
       
 `;
-
+/**
+ * Элемент визуальной маркировки отображающий статус.
+ */
 export const Label: React.FC<ILabelProps> = ({
 	text = "Label",
 	size = "medium",
