@@ -39,4 +39,19 @@ export const Flat = {
     }
 }
 
+export const ButtonLink = {
+    args: {
+        appearance: "primary",
+        size: "medium",
+        text: "Hello Button-Link",
+    }
+}
+
+export const ButtonLIcon = {
+    args: {
+        appearance: "primary",
+        size: "medium",
+    }
+}
+
 

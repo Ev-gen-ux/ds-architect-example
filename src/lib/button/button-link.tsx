@@ -2,12 +2,33 @@ import Styled from "styled-components";
 import { Icon, iconsType } from "../icon";
 
 interface IButtonLinkProps {
+  /**
+   * Визуальный вес компонента.
+   */
     appearance?: "primary" | "inverted";
+    /**
+     * Размер компонента.
+     */
     size?: "large" | "medium";
+    /**
+     * Заблокированное состояние.
+     */
     disabled?: boolean;
+    /**
+     * Состояние загрузки.
+     */
     loading?: boolean;
+    /**
+     * Иконка слева.
+     */
     iconBefore?: iconsType;
+    /**
+     * Иконка справа.
+     */
     iconAfter?: iconsType;
+    /**
+     * Наполнение текстом.
+     */
     text?: string;
 }
 
@@ -75,6 +96,9 @@ const StyledButtonLink = Styled.button<IButtonLinkProps>`
 
 `;
 
+/**
+ * Кнопка для навигации и изменения URL.
+ */
 export const ButtonLink: React.FC<IButtonLinkProps> = ({ appearance = "primary", size = "medium", disabled, loading, iconBefore, iconAfter, text = "Button Label" }) => {
     return <StyledButtonLink
         appearance={appearance}

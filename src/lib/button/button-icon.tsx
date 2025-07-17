@@ -2,10 +2,25 @@ import styled from "styled-components";
 import { Icon, iconsType } from "../icon";
 
 interface IButtonIconProps {
+    /**
+     * Визуальный вес компонента.
+     */
     appearance?: "primary" | "secondary";
+    /**
+     * Размер компонента.
+     */
     size?: "large" | "medium";
+    /**
+     * Заблокированное состояние.
+     */
     disabled?: boolean;
+    /**
+     * Состояние загрузки.
+     */
     loading?: boolean;
+    /**
+     * Иконка.
+     */
     icon?: iconsType;
 }
 
@@ -82,6 +97,9 @@ const StyledButtonIcon = styled.button<IButtonIconProps>`
             `}
 `;
 
+/**
+ * Кнопка, состоящая только из значка, позволяет людям совершать простые и узнаваемые действия в условиях ограниченного пространства.
+ */
 export const ButtonIcon: React.FC<IButtonIconProps> = ({
     appearance = "primary",
     size = "large",
