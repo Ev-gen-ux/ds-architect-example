@@ -1,4 +1,4 @@
-import { InputLabel} from "./input-label";
+import { InputLabel} from "./input-heading";
 
 
 export default {

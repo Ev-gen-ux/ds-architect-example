@@ -531,7 +531,7 @@ declare module "styled-components" {
 
             },
 
-            inputLabel: {
+            inputHeading: {
                 required: {
                     enabled: string;
                 },
