@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-interface IInputLabel {
+interface IInputHeading{
 	/**
 	 * Визуальный вес компонента.
 	 */
@@ -15,7 +15,7 @@ interface IInputLabel {
 	text: string;
 }
 
-const StyledIInputLabel = styled.span<IInputLabel>`
+const StyledIInputHeading= styled.span<IInputHeading>`
 	font-family: ${(props) => props.theme.typography.fontFamily.component};
 	font-size: ${(props) => props.theme.typography.fontSize.component.base};
 	line-height: ${(props) => props.theme.typography.lineHeight.component.base};
@@ -25,19 +25,19 @@ const StyledIInputLabel = styled.span<IInputLabel>`
 	gap: ${(props) => props.theme.spacing.inner.closest};
 
 	 ${(props) => props.appearance === "enabled" && `
-            color: ${props.theme.colors.inputLabel.enabled};
+            color: ${props.theme.colors.inputHeading.enabled};
             `}
 
 	${(props) => props.appearance === "disabled" && `
-            color: ${props.theme.colors.inputLabel.disabled};
+            color: ${props.theme.colors.inputHeading.disabled};
             `}
 
     ${(props) => props.appearance === "readOnly" && `
-            color: ${props.theme.colors.inputLabel.readOnly};
+            color: ${props.theme.colors.inputHeading.readOnly};
             `}
 
 	.inputLabel-required {
-		color: ${(props) => props.theme.colors.inputLabel.required};
+		color: ${(props) => props.theme.colors.inputHeading.required};
 	};
 
 `;
@@ -45,11 +45,11 @@ const StyledIInputLabel = styled.span<IInputLabel>`
 /**
  * Компонент используется в качестве заголовка для полей ввода. 
  */
-export const Label: React.FC<IInputLabel> = ({ required, text }) => {
+export const Label: React.FC<IInputHeading> = ({ required, text }) => {
 	return (
-		<StyledIInputLabel text={text} required={required}>
+		<StyledIInputHeading text={text} required={required}>
 			{text}
 			{required && <span className="label-required">*</span>}
-		</StyledIInputLabel>
+		</StyledIInputHeading>
 	);
 };

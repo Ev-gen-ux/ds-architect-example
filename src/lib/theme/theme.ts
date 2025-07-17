@@ -527,7 +527,7 @@ export const lightTheme: DefaultTheme = {
             },
         },
 
-        inputLabel: {
+        inputHeading: {
             required: {
                 enabled: colors.red[500],
             },
@@ -1242,7 +1242,7 @@ export const darkTheme: DefaultTheme = {
             },
         },
 
-        inputLabel: {
+        inputHeading: {
               required: {
                 enabled: colors.red[500],
             },
