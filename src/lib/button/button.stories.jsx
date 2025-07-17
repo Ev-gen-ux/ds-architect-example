@@ -47,7 +47,7 @@ export const ButtonLink = {
     }
 }
 
-export const ButtonLIcon = {
+export const ButtonIcon = {
     args: {
         appearance: "primary",
         size: "medium",
