@@ -16,7 +16,7 @@ interface IButtonProps {
      */
     disabled?: boolean;
     /**
-     * состояние загрузки.
+     * Состояние загрузки.
      */
     loading?: boolean;
     /**Включает иконку слева. 
