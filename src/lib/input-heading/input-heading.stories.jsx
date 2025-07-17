@@ -1,9 +1,9 @@
-import { InputLabel} from "./input-heading";
+import { InputHeading} from "./input-heading";
 
 
 export default {
-    title: "Компоненты/InputLabel",
-    component: InputLabel,
+    title: "Компоненты/InputHeading",
+    component: InputHeading,
     layout: "centered",
     parameters: {
         status: {
@@ -18,20 +18,20 @@ export default {
 export const Enabled = {
     args: {
         appearance: "enabled",
-        text: "Hello InputLabel",
+        text: "Hello InputHeading",
     }
 }
 
 export const Disabled = {
     args: {
         appearance: "disabled",
-        text: "Hello InputLabel",
+        text: "Hello InputHeading",
     }
 }
 
 export const ReadOnly = {
     args: {
         appearance: "readOnly",
-        text: "Hello InputLabel",
+        text: "Hello InputHeading",
     }
 }
