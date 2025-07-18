@@ -535,6 +535,23 @@ export const lightTheme: DefaultTheme = {
             disabled: colors.neutral[300],
             readOnly: colors.neutral[400],
         },
+
+        newsCard: {
+            background: {
+                enabled: colors.white,
+                hover: colors.blue[25],
+                active: colors.blue[50],
+            },
+
+            border: {
+                enabled: colors.neutral[100],
+
+            },
+
+            label: {
+                enabled: colors.black,
+            },
+        },
     },
 
 
@@ -1243,7 +1260,7 @@ export const darkTheme: DefaultTheme = {
         },
 
         inputHeading: {
-              required: {
+            required: {
                 enabled: colors.red[500],
             },
             enabled: colors.neutral[300],
@@ -1251,6 +1268,22 @@ export const darkTheme: DefaultTheme = {
             readOnly: colors.neutral[200],
         },
 
+        newsCard: {
+            background: {
+                enabled: colors.blue[800],
+                hover: colors.blue[700],
+                active: colors.blue[600],
+            },
+
+            border: {
+                enabled: colors.neutral[600],
+
+            },
+
+            label: {
+                enabled: colors.neutral[50],
+            },
+        },
 
     },
 

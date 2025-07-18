@@ -539,6 +539,22 @@ declare module "styled-components" {
                 disabled: string;
                 readOnly: string;
             },
+
+            newsCard: {
+                background: {
+                 enabled: string;
+                 hover: string;
+                 active: string;
+                },
+
+                border: {
+                    enabled: string;
+                },
+
+               label: {
+                enabled: string;
+               },
+            },
         },
 
         shadows: {
