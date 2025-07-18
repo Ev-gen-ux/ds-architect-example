@@ -536,7 +536,7 @@ export const lightTheme: DefaultTheme = {
             readOnly: colors.neutral[400],
         },
 
-        newsCard: {
+        news: {
             background: {
                 enabled: colors.white,
                 hover: colors.blue[25],
@@ -1268,7 +1268,7 @@ export const darkTheme: DefaultTheme = {
             readOnly: colors.neutral[200],
         },
 
-        newsCard: {
+        news: {
             background: {
                 enabled: colors.blue[800],
                 hover: colors.blue[700],
