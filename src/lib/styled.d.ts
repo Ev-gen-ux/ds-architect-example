@@ -540,7 +540,7 @@ declare module "styled-components" {
                 readOnly: string;
             },
 
-            newsCard: {
+            news: {
                 background: {
                  enabled: string;
                  hover: string;
